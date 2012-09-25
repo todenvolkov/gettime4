@@ -1,0 +1,1 @@
+<h1>Sorry, no more tips available this time. Try again tomorrow</h1>

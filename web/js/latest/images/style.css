@@ -1,0 +1,163 @@
+body {
+    font: 13px "Trebuchet MS", Arial, Verdana;
+    padding-top: 95px;
+    background: none repeat scroll 0 0 #7707F0;
+    background-color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #3C769D;
+}
+
+h1 a,
+p em a {
+    display: block;
+    overflow: hidden;
+    text-indent: -1000px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+h1 a {
+    background: #EEE url(markitup.png) no-repeat top left;
+    width: 245px;
+    height: 85px;
+    top: 28px;
+}
+
+p em a {
+    background: transparent url(jaysalvat.png) no-repeat 10% 50%;
+    width: 120px;
+    height: 28px;
+    left: 30px;
+}
+
+header nav li a {
+    color: #ffffff;
+    font-family: Calibri;
+    font-size: 49px;
+    padding: 10px 12px 9px;
+
+}
+
+header nav li {
+
+}
+
+.wrapper {
+    background: url("/img/stadium.jpg") no-repeat scroll center top #000000;
+    padding: 16px 0 0;
+    margin: 0 auto;
+    width: 980px;
+
+}
+
+header nav {
+    top: 263px;
+
+}
+
+header {
+    height: 343px;
+
+}
+
+.ball {
+    position: relative;
+    top: -6px;
+    left: 16px;
+
+}
+
+.slogan {
+    position: relative;
+    top: -26px;
+    left: 11px;
+
+}
+
+.todays {
+    color: #F453E8;
+    margin-left: 12px;
+
+}
+
+.purplebg {
+    overflow: hidden;
+
+}
+
+.bet {
+    font-family: Calibri;
+    color: #f453E8;
+    font-weight: bold;
+
+}
+
+.time {
+    font-family: 'Facebook Letter Font', Calibri;
+    color: white;
+    font-weight: bold;
+
+}
+
+.framemiddle {
+    background-position: -2px;
+
+}
+
+.framebottom {
+    background-position: center bottom;
+    vertical-align: bottom;
+    position: relative;
+
+}
+
+content ul {
+    font-size: 20px;
+
+}
+
+h1.logo {
+    font-size: 48px;
+
+}
+
+.blackbg {
+    background-color: #7707F0;
+
+}
+
+.bottommenu {
+    position: relative;
+    float: left;
+    list-style: none;
+    display: block;
+    width: 100%;
+    text-align: right;
+
+}
+
+.bottommenu li {
+    position: relative;
+    float: left;
+    padding-left: 20px;
+    margin: 0 auto;
+    font-size: 20px;
+    color: white;
+    text-decoration: underline;
+    display: inline;
+
+}
+
+table.medium thead td {
+    text-align: center;
+
+}
+
+#footer {
+    background: none repeat scroll 0 0;
+
+}

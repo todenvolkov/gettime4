@@ -1,0 +1,456 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* TOC
+* RESET
+* FONT FACE INSTALLED
+* HEADER
+* NAVIGATION
+* ASIDE
+* FOOTER
+* PORTFOLIO PAGE
+* PACKAGES PAGE
+==============================================================*/
+
+
+/* RESET STYLES HERE
+==============================================================*/
+html {
+  font-size: 100%;
+  overflow-y: scroll;
+
+    position: relative;
+}
+body {
+  margin: 0;
+  font-size: 13px;
+    /* 1.231 WILL BE MULTIPLIED BY CURRENT FONT SIZE AND MAKE 16PX LINE HEIGHT */
+  min-height:100%;
+  font-family: sans-serif;
+  color: #373737;
+    background: none repeat scroll 0 0 #481e86;
+
+    position: relative;
+
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  display: block;
+}
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif;
+  color: #666;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+/* SAFARI RESET AS SAFARI DOES NOT RECOGNISE QUOTES PROPERTY
+==============================================================================*/
+content
+{
+    color:#fff;
+}
+.content
+{
+    color:#fff;
+}
+a {
+  margin:0;
+  padding:0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: underline;
+  color:inherit;
+}
+a:hover,
+a:active {
+  outline: 0;
+  text-decoration:none;
+}
+a img {
+  border:0 none;
+}
+del {
+  text-decoration: line-through;
+}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+small {
+  font-size: 85%;
+}
+table {
+  font-size: inherit;
+  font: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+th {
+  font-weight: bold;
+  vertical-align: bottom;
+}
+td {
+  font-weight: normal;
+}
+td,
+td img {
+  vertical-align: top;
+}
+/* HAND CURSOR ON CLICKABLE ELEMENTS
+==============================================================================*/
+.clickable,
+label,
+input[type=button],
+input[type=submit],
+button,
+input[type=reset] {
+  cursor: pointer;
+}
+/* WEBKIT BROWSERS ADD A 2PX MARGIN OUTSIDE THE CHROME OF FORM ELEMENTS
+==============================================================================*/
+button,
+input,
+select,
+textarea {
+  margin: 0;
+}
+/* MAKE BUTTONS PLAY NICE IN INTERNET EXPLORER
+==============================================================================*/
+button {
+  width: auto;
+  overflow: visible;
+}
+/* LET'S CLEAR SOME FLOATING
+==============================================================================*/
+.clearfix:before,
+.clearfix:after {
+  content:"";
+  display:table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  zoom:1; /* For IE 6/7 (trigger hasLayout) */
+}
+dd {
+  margin: 0 0 0 40px;
+}
+ul,
+ol {
+  list-style: none;
+  list-style-image: none;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote {
+  margin:0;
+  padding:0;
+}
+/* BODY 
+==============================================================*/
+body {
+    background-color: #fff;
+    background: url("/img/stadium.jpg") no-repeat scroll center top #000000;
+    background: none repeat scroll 0 0 #6d2e9d;
+
+}
+.wrapper {
+background-color: #000;
+}
+.ball
+{
+  width: 100px;
+    position: relative;
+    top: -6px;
+    left: 16px;
+}
+.bet
+{
+    font-family: Calibri;
+     color: #f453E8;
+    font-weight: bold;
+    font-size: 50px;
+}
+.time
+{
+    font-family: 'Facebook Letter Faces', Calibri;
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+
+}
+h2 .bet
+{
+    font-family: Calibri;
+}
+h2 .time
+{
+    font-family: Calibri;
+}
+
+h3 .bet
+{
+    font-family: Calibri;
+}
+h3 .time
+{
+    font-family:  Calibri;
+}
+
+
+.bet2
+{
+    font-family: Calibri;
+     color: #f453E8;
+    font-weight: bold;
+}
+.time2
+{
+    font-family: 'Facebook Letter Faces', Calibri;
+    color: white;
+    font-weight: bold;
+
+}
+
+
+.slogan
+{
+    font-family: 'Chalkduster';
+    font-size: 14px;
+    color: #fff;
+    position: relative;
+    top: -26px;
+    left: 11px;
+
+}
+
+h1.logo
+{
+    font-size: 48px;
+}
+
+.todays
+{
+    font-size: 26px;
+    font-family: Calibri;
+    color: #F453E8;
+    margin-left: 12px;
+
+}
+.date
+{
+    font-size: 26px;
+    font-family: Calibri;
+    color: white;
+    margin-left: 12px;
+}
+
+.framemiddle
+{
+    background-image: url('/img/framemiddle.png');
+    background-repeat: repeat-y;
+    overflow: hidden;
+    background-position: -2px;
+}
+.frametop
+{
+    background-image: url('/img/frametop.png') ;
+    background-repeat: no-repeat;
+    background-position: top;
+
+}
+
+.framebottom
+{
+    background-image: url('/img/framebottom.png') ;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    vertical-align: bottom;
+    position: relative;
+
+}
+#main
+{
+
+background: url('/img/stadium.jpg') no-repeat;
+    background-position: top center;
+    min-height:100%;
+                _height:90%;
+    padding-bottom:50px;
+    height: 90%;
+}
+#footer
+{
+    height:10%;
+               margin-top:-50px;
+            /*   position:relative; */
+    width:940px;
+    margin-left: auto;
+    margin-right: auto;
+    background: none repeat scroll 0 0;
+}
+
+.emptyrow
+{
+    height:30px;
+}
+
+.dottedrow
+{
+    background: url('/img/dot.png') top repeat-x;
+    height:20px;
+}
+content ul
+{
+    list-style: disc;
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+.blackbg
+{
+    background-color: #6D2E9D;
+}
+
+.bottommenu
+{
+    list-style: none;
+    margin: 0 auto;
+    text-align: right;
+    display: block;
+}
+.bottommenu li
+{
+    list-style: none;
+
+    padding-left: 20px;
+    margin: 0 auto;
+    font-size: 20px;
+    color: white;
+    text-decoration: underline;
+    display: inline;
+}
+.white
+{
+    color:white;
+}
+.autoheighttips
+{
+    min-height: 165px;
+    clear: right;
+    display: block;
+}
+.s
+{
+    font-size: 13px;
+}
+.longtd
+{
+    width:80px;
+}
+.monthrow
+{
+    background-color: transparent;
+}
+.bordered, .bordered td
+{
+    border: #fff 1px solid;
+    line-height: 11px;
+    text-align: center;
+    vertical-align: middle;
+}
+table.small, table.small td
+{
+    font-size: 11px;
+}
+.ident
+{
+    margin-left:25px;
+    color: #fff;
+}
+table.medium, table.medium td
+{
+    font-size: 13px;
+}
+table.medium thead td
+{
+    font-weight: bold;
+    height: 20px;
+    line-height: 20px;
+    vertical-align: middle;
+    text-align: center;
+}
+#summary
+{
+    padding-left: 22px;
+    color: lime;
+    font-size: 20px;
+    padding-top: 0px;
+    padding-bottom: 4px;
+}
+
+#paypal_submit
+{
+ width: 141px;
+    background-color: transparent;
+    height: 30px;
+    padding-left: 19px;
+    padding-top: 10px;
+}
+.paypal_submit
+{
+}
+
+.choosecolumn
+{
+    width: 30px;
+}
+.col1
+{
+    width: 17px;
+}
+.col2
+{
+    width: 30px;
+}
+.col3
+{
+    width: 23px;
+}
+.col4
+{
+    width: 27px;
+}

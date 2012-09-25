@@ -1,4 +1,1 @@
-gettime4
-========
-
-gettime4
+ <iframe id="webmaster_frame_id" name="webmaster_frame_name" src="http://lsh.lshunter.tv/index.php?option=com_lsh&view=lsh&layout=webmaster&tmpl=component&sections=35&font_type=Times New Roman&font_size=11px&start_time_eventtitle_font_size=12px&tvname_font_size=12px&tz_name_font_size=12px" width="100%" height="600" scrolling="auto" align="top" frameborder="0">Your browser does not support frames, so you will not be able to view this page.</iframe>

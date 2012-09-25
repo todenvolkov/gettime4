@@ -1,0 +1,1427 @@
+2012/08/12 20:31:07 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined. The SQL statement executed was: SELECT * FROM `orders` `t` WHERE txn_id=:txn_id. Bound with :txn_in='28121125'.
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (136)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/12 20:31:07 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined. The SQL statement executed was: SELECT * FROM `orders` `t` WHERE txn_id=:txn_id. Bound with :txn_in='28121125'' in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/db/CDbCommand.php:528
+Stack trace:
+#0 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/db/CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/db/ar/CActiveRecord.php(1287): CDbCommand->queryAll()
+#2 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/db/ar/CActiveRecord.php(1406): CActiveRecord->query(Object(CDbCriteria), true)
+#3 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php(136): CActiveRecord->findAll('txn_id=:txn_id', Array)
+#4 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/actions/CInlineAction.php(50): OrderController->actionProcess()
+#5 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#6 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#7 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CWebApplication.php(276): CController->run('process')
+#9 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CWebApplication.php(135): CWebApplication->runController('order/order/pro...')
+#10 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php(15): CApplication->run()
+#12 {main}
+REQUEST_URI=/paypal/listener
+---
+2012/08/12 20:32:36 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined. The SQL statement executed was: SELECT * FROM `orders` `t` WHERE txn_id=:txn_id. Bound with :txn_in='28121125'.
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (136)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/12 20:32:36 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined. The SQL statement executed was: SELECT * FROM `orders` `t` WHERE txn_id=:txn_id. Bound with :txn_in='28121125'' in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/db/CDbCommand.php:528
+Stack trace:
+#0 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/db/CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/db/ar/CActiveRecord.php(1287): CDbCommand->queryAll()
+#2 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/db/ar/CActiveRecord.php(1406): CActiveRecord->query(Object(CDbCriteria), true)
+#3 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php(136): CActiveRecord->findAll('txn_id=:txn_id', Array)
+#4 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/actions/CInlineAction.php(50): OrderController->actionProcess()
+#5 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#6 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#7 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CWebApplication.php(276): CController->run('process')
+#9 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CWebApplication.php(135): CWebApplication->runController('order/order/pro...')
+#10 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php(15): CApplication->run()
+#12 {main}
+REQUEST_URI=/paypal/listener
+---
+2012/08/12 20:37:14 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined. The SQL statement executed was: SELECT * FROM `orders` `t` WHERE txn_id=:txn_id. Bound with :txn_in='28121125'.
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (136)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/12 20:37:14 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined. The SQL statement executed was: SELECT * FROM `orders` `t` WHERE txn_id=:txn_id. Bound with :txn_in='28121125'' in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/db/CDbCommand.php:528
+Stack trace:
+#0 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/db/CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/db/ar/CActiveRecord.php(1287): CDbCommand->queryAll()
+#2 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/db/ar/CActiveRecord.php(1406): CActiveRecord->query(Object(CDbCriteria), true)
+#3 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php(136): CActiveRecord->findAll('txn_id=:txn_id', Array)
+#4 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/actions/CInlineAction.php(50): OrderController->actionProcess()
+#5 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#6 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#7 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CWebApplication.php(276): CController->run('process')
+#9 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CWebApplication.php(135): CWebApplication->runController('order/order/pro...')
+#10 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php(15): CApplication->run()
+#12 {main}
+REQUEST_URI=/paypal/listener
+---
+2012/08/12 20:39:45 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined. The SQL statement executed was: SELECT * FROM `orders` `t` WHERE txn_id=:txn_id. Bound with :txn_in='278121637'.
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (136)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/12 20:39:45 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined. The SQL statement executed was: SELECT * FROM `orders` `t` WHERE txn_id=:txn_id. Bound with :txn_in='278121637'' in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/db/CDbCommand.php:528
+Stack trace:
+#0 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/db/CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/db/ar/CActiveRecord.php(1287): CDbCommand->queryAll()
+#2 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/db/ar/CActiveRecord.php(1406): CActiveRecord->query(Object(CDbCriteria), true)
+#3 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php(136): CActiveRecord->findAll('txn_id=:txn_id', Array)
+#4 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/actions/CInlineAction.php(50): OrderController->actionProcess()
+#5 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#6 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#7 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CWebApplication.php(276): CController->run('process')
+#9 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CWebApplication.php(135): CWebApplication->runController('order/order/pro...')
+#10 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php(15): CApplication->run()
+#12 {main}
+REQUEST_URI=/paypal/listener
+---
+2012/08/12 20:43:34 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined. The SQL statement executed was: SELECT * FROM `orders` `t` WHERE txn_id=:txn_id. Bound with :txn_in=NULL.
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (23)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/12 20:43:34 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined. The SQL statement executed was: SELECT * FROM `orders` `t` WHERE txn_id=:txn_id. Bound with :txn_in=NULL' in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/db/CDbCommand.php:528
+Stack trace:
+#0 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/db/CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/db/ar/CActiveRecord.php(1287): CDbCommand->queryAll()
+#2 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/db/ar/CActiveRecord.php(1406): CActiveRecord->query(Object(CDbCriteria), true)
+#3 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php(23): CActiveRecord->findAll('txn_id=:txn_id', Array)
+#4 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/actions/CInlineAction.php(50): OrderController->actionProcess()
+#5 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#6 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#7 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CWebApplication.php(276): CController->run('process')
+#9 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CWebApplication.php(135): CWebApplication->runController('order/order/pro...')
+#10 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php(15): CApplication->run()
+#12 {main}
+REQUEST_URI=/paypal/listener
+---
+2012/08/12 20:44:44 [error] [exception.CException] exception 'CException' with message 'Property "Order.items" is not defined.' in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/base/CComponent.php:131
+Stack trace:
+#0 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/db/ar/CActiveRecord.php(144): CComponent->__get('items')
+#1 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/models/Order.php(89): CActiveRecord->__get('items')
+#2 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/db/ar/CActiveRecord.php(1034): Order->afterSave()
+#3 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/db/ar/CActiveRecord.php(787): CActiveRecord->insert(NULL)
+#4 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php(199): CActiveRecord->save()
+#5 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/actions/CInlineAction.php(50): OrderController->actionProcess()
+#6 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#7 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#8 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CWebApplication.php(276): CController->run('process')
+#10 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CWebApplication.php(135): CWebApplication->runController('order/order/pro...')
+#11 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#12 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php(15): CApplication->run()
+#13 {main}
+REQUEST_URI=/paypal/listener
+---
+2012/08/12 20:46:12 [error] [exception.CException] exception 'CException' with message 'Property "Order.items" is not defined.' in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/base/CComponent.php:131
+Stack trace:
+#0 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/db/ar/CActiveRecord.php(144): CComponent->__get('items')
+#1 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/models/Order.php(89): CActiveRecord->__get('items')
+#2 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/db/ar/CActiveRecord.php(1034): Order->afterSave()
+#3 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/db/ar/CActiveRecord.php(787): CActiveRecord->insert(NULL)
+#4 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php(199): CActiveRecord->save()
+#5 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/actions/CInlineAction.php(50): OrderController->actionProcess()
+#6 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#7 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#8 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CWebApplication.php(276): CController->run('process')
+#10 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CWebApplication.php(135): CWebApplication->runController('order/order/pro...')
+#11 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#12 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php(15): CApplication->run()
+#13 {main}
+REQUEST_URI=/paypal/listener
+---
+2012/08/12 20:49:36 [error] [exception.CException] exception 'CException' with message 'Property "Order.items" is not defined.' in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/base/CComponent.php:131
+Stack trace:
+#0 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/db/ar/CActiveRecord.php(144): CComponent->__get('items')
+#1 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/models/Order.php(89): CActiveRecord->__get('items')
+#2 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/db/ar/CActiveRecord.php(1034): Order->afterSave()
+#3 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/db/ar/CActiveRecord.php(787): CActiveRecord->insert(NULL)
+#4 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php(199): CActiveRecord->save()
+#5 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/actions/CInlineAction.php(50): OrderController->actionProcess()
+#6 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#7 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#8 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CWebApplication.php(276): CController->run('process')
+#10 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CWebApplication.php(135): CWebApplication->runController('order/order/pro...')
+#11 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#12 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php(15): CApplication->run()
+#13 {main}
+REQUEST_URI=/paypal/listener
+---
+2012/08/12 20:52:12 [error] [php] Attempt to assign property of non-object (/nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/models/Order.php:91)
+Stack trace:
+#0 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php(35): Order->save()
+#1 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/actions/CInlineAction.php(50): OrderController->actionProcess()
+#2 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CController.php(309): CInlineAction->runWithParams()
+#3 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CController.php(287): OrderController->runAction()
+#4 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CController.php(266): OrderController->runActionWithFilters()
+#5 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CWebApplication.php(276): OrderController->run()
+#6 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#7 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php(15): CWebApplication->run()
+REQUEST_URI=/paypal/listener
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/models/Order.php (91)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (35)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/12 21:27:53 [error] [php] Attempt to assign property of non-object (/nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/models/Order.php:92)
+Stack trace:
+#0 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php(35): Order->save()
+#1 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/actions/CInlineAction.php(50): OrderController->actionProcess()
+#2 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CController.php(309): CInlineAction->runWithParams()
+#3 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CController.php(287): OrderController->runAction()
+#4 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CController.php(266): OrderController->runActionWithFilters()
+#5 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CWebApplication.php(276): OrderController->run()
+#6 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#7 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php(15): CWebApplication->run()
+REQUEST_URI=/paypal/listener
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/models/Order.php (92)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (35)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/12 21:28:52 [error] [php] Attempt to assign property of non-object (/nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/models/Order.php:93)
+Stack trace:
+#0 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php(35): Order->save()
+#1 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/actions/CInlineAction.php(50): OrderController->actionProcess()
+#2 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CController.php(309): CInlineAction->runWithParams()
+#3 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CController.php(287): OrderController->runAction()
+#4 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CController.php(266): OrderController->runActionWithFilters()
+#5 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CWebApplication.php(276): OrderController->run()
+#6 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#7 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php(15): CWebApplication->run()
+REQUEST_URI=/paypal/listener
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/models/Order.php (93)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (35)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/12 22:56:48 [info] [application.modules.user] ÐŸÐ¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»ÑŒ admin@admin.ru Ð°Ð²Ñ‚Ð¾Ñ€Ð¸Ð·Ð¾Ð²Ð°Ð»ÑÑ!
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/user/controllers/account/LoginAction.php (16)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/12 23:04:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "order/default/admin".' in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CWebApplication.php(135): CWebApplication->runController('order/default/a...')
+#1 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/order/default/admin
+HTTP_REFERER=http://bettime.info/index.php/page/default/update/id/5
+---
+2012/08/13 02:13:24 [error] [php] array_merge() [<a href='function.array-merge'>function.array-merge</a>]: Argument #2 is not an array (/nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/extensions/KEmail/KEmail.php:225)
+Stack trace:
+#0 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/actions/CInlineAction.php(50): OrderController->actionProcess()
+#1 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CController.php(309): CInlineAction->runWithParams()
+#2 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CController.php(287): OrderController->runAction()
+#3 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CController.php(266): OrderController->runActionWithFilters()
+#4 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CWebApplication.php(276): OrderController->run()
+#5 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#6 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php(15): CWebApplication->run()
+REQUEST_URI=/paypal/listener
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/extensions/KEmail/KEmail.php (225)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (219)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/13 03:05:00 [info] [application.modules.user] ÐŸÐ¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»ÑŒ admin@admin.ru Ð°Ð²Ñ‚Ð¾Ñ€Ð¸Ð·Ð¾Ð²Ð°Ð»ÑÑ!
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/user/controllers/account/LoginAction.php (16)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/13 08:27:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "robots.txt".' in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CWebApplication.php(135): CWebApplication->runController('robots.txt')
+#1 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/robots.txt
+---
+2012/08/13 09:44:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "robots.txt".' in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CWebApplication.php(135): CWebApplication->runController('robots.txt')
+#1 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/robots.txt
+---
+2012/08/13 10:46:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "robots.txt".' in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CWebApplication.php(135): CWebApplication->runController('robots.txt')
+#1 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/robots.txt
+---
+2012/08/13 18:20:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "robots.txt".' in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CWebApplication.php(135): CWebApplication->runController('robots.txt')
+#1 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/robots.txt
+---
+2012/08/13 20:25:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "robots.txt".' in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CWebApplication.php(135): CWebApplication->runController('robots.txt')
+#1 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/robots.txt
+---
+2012/08/13 21:04:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/nsystems/js/html5.js".' in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CWebApplication.php(135): CWebApplication->runController('themes/nsystems...')
+#1 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/nsystems/js/html5.js
+HTTP_REFERER=http://bettime.info/
+---
+2012/08/13 21:06:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/nsystems/js/html5.js".' in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CWebApplication.php(135): CWebApplication->runController('themes/nsystems...')
+#1 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/nsystems/js/html5.js
+HTTP_REFERER=http://bettime.info/records
+---
+2012/08/13 21:06:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/nsystems/js/html5.js".' in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CWebApplication.php(135): CWebApplication->runController('themes/nsystems...')
+#1 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/nsystems/js/html5.js
+HTTP_REFERER=http://bettime.info/pages/service
+---
+2012/08/13 21:07:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/nsystems/js/html5.js".' in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CWebApplication.php(135): CWebApplication->runController('themes/nsystems...')
+#1 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/nsystems/js/html5.js
+HTTP_REFERER=http://bettime.info/contacts
+---
+2012/08/13 21:07:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/nsystems/js/html5.js".' in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CWebApplication.php(135): CWebApplication->runController('themes/nsystems...')
+#1 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/nsystems/js/html5.js
+HTTP_REFERER=http://bettime.info/
+---
+2012/08/14 07:15:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "robots.txt".' in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CWebApplication.php(135): CWebApplication->runController('robots.txt')
+#1 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/robots.txt
+---
+2012/08/14 13:46:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "robots.txt".' in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CWebApplication.php(135): CWebApplication->runController('robots.txt')
+#1 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/robots.txt
+---
+2012/08/14 18:26:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "robots.txt".' in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CWebApplication.php(135): CWebApplication->runController('robots.txt')
+#1 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/robots.txt
+---
+2012/08/14 19:18:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "robots.txt".' in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CWebApplication.php(135): CWebApplication->runController('robots.txt')
+#1 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/robots.txt
+---
+2012/08/14 21:08:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "robots.txt".' in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CWebApplication.php(135): CWebApplication->runController('robots.txt')
+#1 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/robots.txt
+---
+2012/08/15 19:17:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "robots.txt".' in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CWebApplication.php(135): CWebApplication->runController('robots.txt')
+#1 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/robots.txt
+---
+2012/08/15 19:23:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "robots.txt".' in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CWebApplication.php(135): CWebApplication->runController('robots.txt')
+#1 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/robots.txt
+---
+2012/08/16 00:03:19 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[70100]: <<Unknown error>>: 1317 Query execution was interrupted. The SQL statement executed was: SELECT * FROM `settings` `t` WHERE module_id = :module_id. Bound with :module_id='user'.
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/yupe/components/YWebModule.php (196)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/user/UserModule.php (136)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 00:03:19 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[70100]: <<Unknown error>>: 1317 Query execution was interrupted. The SQL statement executed was: SELECT * FROM `settings` `t` WHERE module_id = :module_id. Bound with :module_id='user'' in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/db/CDbCommand.php:528
+Stack trace:
+#0 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/db/CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/db/ar/CActiveRecord.php(1287): CDbCommand->queryAll()
+#2 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/db/ar/CActiveRecord.php(1406): CActiveRecord->query(Object(CDbCriteria), true)
+#3 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/yupe/components/YWebModule.php(196): CActiveRecord->findAll('module_id = :mo...', Array)
+#4 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/user/UserModule.php(136): YWebModule->init()
+#5 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/base/CModule.php(91): UserModule->init()
+#6 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/YiiBase.php(208): CModule->__construct('user', NULL, Array)
+#7 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/base/CModule.php(283): YiiBase::createComponent('application.mod...', 'user', NULL, Array)
+#8 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CWebApplication.php(331): CModule->getModule('user')
+#9 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CWebApplication.php(270): CWebApplication->createController('user/account/lo...')
+#10 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CWebApplication.php(135): CWebApplication->runController('user/account/lo...')
+#11 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#12 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php(15): CApplication->run()
+#13 {main}
+REQUEST_URI=/login
+HTTP_REFERER=http://bettime.info/login
+---
+2012/08/16 00:17:34 [info] [application] Transaction begins
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (55)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 00:17:34 [info] [application] Transaction is INVALID
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (159)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 00:17:34 [info] [application] Transaction begins
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (55)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 00:17:34 [info] [application] Transaction is INVALID
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (159)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 00:24:29 [info] [application] Transaction begins
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (55)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 00:24:29 [info] [transaction] Transaction Verified
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (72)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 00:24:29 [info] [application] Transaction Payment is Complete
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (75)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 00:24:29 [info] [application] Creating new order
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (110)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 00:24:29 [info] [application] Order succesfully saved, trying to send email
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (138)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 00:24:31 [info] [application] Order succesfully saved, email sent
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (142)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 00:24:32 [info] [application] Transaction begins
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (55)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 00:24:32 [info] [transaction] Transaction Verified
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (72)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 00:24:32 [info] [application] Transaction Payment is Complete
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (75)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 00:24:32 [info] [application] Creating new order
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (110)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 00:24:32 [info] [application] Order succesfully saved, trying to send email
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (138)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 00:24:33 [info] [application] Order succesfully saved, email sent
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (142)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 00:24:39 [info] [application] Transaction begins
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (55)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 00:24:39 [info] [transaction] Transaction Verified
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (72)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 00:24:39 [info] [application] Transaction is incomplete or receiver email dont match. Skippingd
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (155)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 00:24:37 [info] [application] Transaction begins
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (55)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 00:24:37 [info] [transaction] Transaction Verified
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (72)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 00:24:37 [info] [application] Transaction Payment is Complete
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (75)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 00:24:37 [info] [application] Creating new order
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (110)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 00:24:37 [info] [application] Order succesfully saved, trying to send email
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (138)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 00:24:42 [info] [application] Order succesfully saved, email sent
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (142)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 00:24:39 [info] [application] Transaction begins
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (55)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 00:24:39 [info] [transaction] Transaction Verified
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (72)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 00:24:39 [info] [application] Transaction Payment is Complete
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (75)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 00:24:39 [info] [application] Creating new order
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (110)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 00:24:42 [info] [application] Order succesfully saved, trying to send email
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (138)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 00:24:43 [info] [application] Order succesfully saved, email sent
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (142)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 00:24:43 [info] [application] Transaction begins
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (55)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 00:24:43 [info] [transaction] Transaction Verified
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (72)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 00:24:43 [info] [application] Transaction Payment is Complete
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (75)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 00:24:43 [info] [application] Creating new order
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (110)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 00:24:43 [info] [application] Order succesfully saved, trying to send email
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (138)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 00:24:45 [info] [application] Order succesfully saved, email sent
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (142)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 00:31:16 [info] [application] [7013ed74798ee36a991b4efd611dab23][Guest][] User: Guest (ID: )
+
+$_POST=array (
+  'LoginForm' => 
+  array (
+    'email' => 'admin@admin.ru',
+    'password' => 'admin',
+  ),
+  'yt0' => 'Ð’Ð¾Ð¹Ñ‚Ð¸',
+)
+
+$_COOKIE=array (
+  'PHPSESSID' => '7013ed74798ee36a991b4efd611dab23',
+)
+2012/08/16 00:31:49 [error] [application.modules.user] [7013ed74798ee36a991b4efd611dab23][Guest][] ÐžÑˆÐ¸Ð±ÐºÐ° Ð°Ð²Ñ‚Ð¾Ñ€Ð¸Ð·Ð°Ñ†Ð¸Ð¸! email => admin@admin.ru, Password => admin!
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/user/controllers/account/LoginAction.php (25)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 00:32:04 [info] [application] [d9e9116850b019c8b0727b9bfbc8ec88][admin][83] User: admin (ID: 83)
+
+$_POST=array (
+  'LoginForm' => 
+  array (
+    'email' => 'admin@admin.ru',
+    'password' => '123456',
+  ),
+  'yt0' => 'Ð’Ð¾Ð¹Ñ‚Ð¸',
+)
+
+$_COOKIE=array (
+  'PHPSESSID' => 'c7e1c617af418b8b43e7c5de24198892',
+)
+2012/08/16 00:32:04 [info] [application.modules.user] [d9e9116850b019c8b0727b9bfbc8ec88][admin][83] ÐŸÐ¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»ÑŒ admin@admin.ru Ð°Ð²Ñ‚Ð¾Ñ€Ð¸Ð·Ð¾Ð²Ð°Ð»ÑÑ!
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/user/controllers/account/LoginAction.php (16)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 00:40:32 [info] [application] $_POST=array (
+  'payer_id' => 'F6EYBBC9JSYYC',
+  'ipn_track_id' => '7558ace7a87e8',
+  'charset' => 'KOI8_R',
+  'payment_gross' => '0.05',
+  'verify_sign' => 'AiPC9BjkCyDFQXbSkoZcgqH3hpacA.nYzEN5HlDSmX9SVtg7SglHeJ5u',
+  'txn_type' => 'send_money',
+  'receiver_id' => 'AN2KMJMRLQTLC',
+  'payment_fee' => '0.05',
+  'mc_currency' => 'USD',
+  'transaction_subject' => '',
+  'protection_eligibility' => 'Ineligible',
+  'payer_status' => 'verified',
+  'first_name' => 'äÅÎÉÓ',
+  'mc_gross' => '0.05',
+  'payment_date' => '11:40:43 Aug 12, 2012 PDT',
+  'payment_status' => 'Completed',
+  'last_name' => '÷ÏÌËÏ×',
+  'payer_business_name' => 'N-Systems',
+  'txn_id' => '04R23716XF403113E',
+  'mc_fee' => '0.05',
+  'resend' => 'true',
+  'payment_type' => 'instant',
+  'notify_version' => '3.6',
+  'payer_email' => 'to.den.volkov@gmail.com',
+  'receiver_email' => 'info@bettime.info',
+  'residence_country' => 'RU',
+)
+2012/08/16 00:40:59 [info] [application] Transaction begins
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (55)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 00:40:59 [info] [transaction] Transaction Verified
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (72)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 00:40:59 [info] [application] Transaction Payment is Complete
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (75)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 00:41:21 [info] [application] Order already Exists
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (79)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 00:41:21 [info] [application] Trying to update order status
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (82)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 00:41:21 [info] [application] Payer adress and summ dont match with existing
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (98)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 00:40:32 [info] [application] $_POST=array (
+  'payer_id' => 'F6EYBBC9JSYYC',
+  'ipn_track_id' => '6c8d2177b71eb',
+  'charset' => 'KOI8_R',
+  'payment_gross' => '0.05',
+  'verify_sign' => 'An5ns1Kso7MWUdW4ErQKJJJ4qi4-ArHqiFx.p7X7Fe2nqv.rrRnymXK2',
+  'pending_reason' => 'intl',
+  'txn_type' => 'send_money',
+  'receiver_id' => 'AN2KMJMRLQTLC',
+  'mc_currency' => 'USD',
+  'transaction_subject' => '',
+  'protection_eligibility' => 'Ineligible',
+  'payer_status' => 'verified',
+  'first_name' => 'äÅÎÉÓ',
+  'mc_gross' => '0.05',
+  'payment_date' => '11:40:43 Aug 12, 2012 PDT',
+  'payment_status' => 'Pending',
+  'business' => 'info@bettime.info',
+  'last_name' => '÷ÏÌËÏ×',
+  'payer_business_name' => 'N-Systems',
+  'txn_id' => '04R23716XF403113E',
+  'resend' => 'true',
+  'payment_type' => 'instant',
+  'notify_version' => '3.6',
+  'payer_email' => 'to.den.volkov@gmail.com',
+  'receiver_email' => 'info@bettime.info',
+  'residence_country' => 'RU',
+)
+2012/08/16 00:41:21 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[70100]: <<Unknown error>>: 1317 Query execution was interrupted. The SQL statement executed was: SHOW COLUMNS FROM `settings`.
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/yupe/models/Settings.php (26)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/yupe/components/YWebModule.php (194)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/OrderModule.php (60)
+2012/08/16 00:41:21 [error] [exception.CDbException] exception 'CDbException' with message 'The table "{{settings}}" for active record class "Settings" cannot be found in the database.' in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/db/ar/CActiveRecord.php:2264
+Stack trace:
+#0 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/db/ar/CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Settings))
+#1 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/yupe/models/Settings.php(26): CActiveRecord::model('Settings')
+#2 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/yupe/components/YWebModule.php(194): Settings::model()
+#3 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/OrderModule.php(60): YWebModule->init()
+#4 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/base/CModule.php(91): OrderModule->init()
+#5 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/YiiBase.php(208): CModule->__construct('order', NULL, Array)
+#6 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/base/CModule.php(283): YiiBase::createComponent('application.mod...', 'order', NULL, Array)
+#7 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CWebApplication.php(331): CModule->getModule('order')
+#8 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CWebApplication.php(270): CWebApplication->createController('order/order/pro...')
+#9 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CWebApplication.php(135): CWebApplication->runController('order/order/pro...')
+#10 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php(15): CApplication->run()
+#12 {main}
+REQUEST_URI=/paypal/listener
+---
+2012/08/16 00:40:32 [info] [application] $_POST=array (
+  'handling_amount' => '0.00',
+  'discount' => '0.00',
+  'insurance_amount' => '0.00',
+  'payer_id' => 'F6EYBBC9JSYYC',
+  'btn_id' => '49623607',
+  'ipn_track_id' => '9440603c8728e',
+  'shipping' => '0.00',
+  'charset' => 'KOI8_R',
+  'payment_gross' => '',
+  'shipping_discount' => '0.00',
+  'verify_sign' => 'AGN-D3LDNqXUJNNte1MJU5Dn75S-AiiQ358l9cLQYEIylJghZ0uO-Bmi',
+  'item_name' => '1centButton',
+  'txn_type' => 'web_accept',
+  'receiver_id' => 'AN2KMJMRLQTLC',
+  'payment_fee' => '',
+  'mc_currency' => 'EUR',
+  'transaction_subject' => '1centButton',
+  'shipping_method' => 'Default',
+  'custom' => '',
+  'protection_eligibility' => 'Ineligible',
+  'payer_status' => 'verified',
+  'first_name' => 'äÅÎÉÓ',
+  'mc_gross' => '0.01',
+  'payment_date' => '12:01:00 Aug 12, 2012 PDT',
+  'payment_status' => 'Completed',
+  'quantity' => '1',
+  'business' => 'info@bettime.info',
+  'item_number' => 'TIP1',
+  'last_name' => '÷ÏÌËÏ×',
+  'payer_business_name' => 'N-Systems',
+  'txn_id' => '7MJ2098609842480R',
+  'mc_fee' => '0.01',
+  'resend' => 'true',
+  'payment_type' => 'instant',
+  'notify_version' => '3.6',
+  'payer_email' => 'to.den.volkov@gmail.com',
+  'receiver_email' => 'info@bettime.info',
+  'tax' => '0.00',
+  'residence_country' => 'RU',
+)
+2012/08/16 00:40:59 [info] [application] Transaction begins
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (55)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 00:40:59 [info] [transaction] Transaction Verified
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (72)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 00:40:59 [info] [application] Transaction Payment is Complete
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (75)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 00:41:21 [info] [application] Order already Exists
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (79)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 00:41:21 [info] [application] Trying to update order status
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (82)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 00:41:21 [info] [application] Payer adress and summ dont match with existing
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (98)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 00:40:50 [info] [application] $_POST=array (
+  'handling_amount' => '0.00',
+  'discount' => '0.00',
+  'insurance_amount' => '0.00',
+  'payer_id' => 'F6EYBBC9JSYYC',
+  'btn_id' => '49623607',
+  'ipn_track_id' => '69733765dab08',
+  'shipping' => '0.00',
+  'charset' => 'KOI8_R',
+  'payment_gross' => '',
+  'shipping_discount' => '0.00',
+  'verify_sign' => 'An5ns1Kso7MWUdW4ErQKJJJ4qi4-APavtJ2F110GDGI0hZGuBJVm46gf',
+  'item_name' => '1centButton',
+  'txn_type' => 'web_accept',
+  'receiver_id' => 'AN2KMJMRLQTLC',
+  'payment_fee' => '',
+  'mc_currency' => 'EUR',
+  'transaction_subject' => '1centButton',
+  'shipping_method' => 'Default',
+  'custom' => '',
+  'protection_eligibility' => 'Ineligible',
+  'payer_status' => 'verified',
+  'first_name' => 'äÅÎÉÓ',
+  'mc_gross' => '0.01',
+  'payment_date' => '15:13:17 Aug 12, 2012 PDT',
+  'payment_status' => 'Completed',
+  'quantity' => '1',
+  'business' => 'info@bettime.info',
+  'item_number' => 'TIP1',
+  'last_name' => '÷ÏÌËÏ×',
+  'payer_business_name' => 'N-Systems',
+  'txn_id' => '0G625438PG3599527',
+  'mc_fee' => '0.01',
+  'resend' => 'true',
+  'payment_type' => 'instant',
+  'notify_version' => '3.6',
+  'payer_email' => 'to.den.volkov@gmail.com',
+  'receiver_email' => 'info@bettime.info',
+  'tax' => '0.00',
+  'residence_country' => 'RU',
+)
+2012/08/16 00:41:21 [info] [application] Transaction begins
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (55)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 00:41:21 [info] [transaction] Transaction Verified
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (72)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 00:41:21 [info] [application] Transaction Payment is Complete
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (75)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 00:41:25 [info] [application] Order already Exists
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (79)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 00:41:25 [info] [application] Trying to update order status
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (82)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 00:41:25 [info] [application] Payer adress and summ dont match with existing
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (98)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 00:40:25 [info] [application] $_POST=array (
+  'handling_amount' => '0.00',
+  'discount' => '0.00',
+  'insurance_amount' => '0.00',
+  'payer_id' => 'F6EYBBC9JSYYC',
+  'btn_id' => '49623607',
+  'ipn_track_id' => 'a4a41f4473270',
+  'shipping' => '0.00',
+  'charset' => 'KOI8_R',
+  'payment_gross' => '',
+  'shipping_discount' => '0.00',
+  'verify_sign' => 'AiPC9BjkCyDFQXbSkoZcgqH3hpacAHJoDwUJjB83B3MdM0EepJ09DRHL',
+  'item_name' => '1centButton',
+  'txn_type' => 'web_accept',
+  'receiver_id' => 'AN2KMJMRLQTLC',
+  'payment_fee' => '',
+  'mc_currency' => 'EUR',
+  'transaction_subject' => '1centButton',
+  'shipping_method' => 'Default',
+  'custom' => '',
+  'protection_eligibility' => 'Ineligible',
+  'payer_status' => 'verified',
+  'first_name' => 'äÅÎÉÓ',
+  'mc_gross' => '0.01',
+  'payment_date' => '14:54:34 Aug 12, 2012 PDT',
+  'payment_status' => 'Completed',
+  'quantity' => '1',
+  'business' => 'info@bettime.info',
+  'item_number' => 'TIP1',
+  'last_name' => '÷ÏÌËÏ×',
+  'payer_business_name' => 'N-Systems',
+  'txn_id' => '4TN98489XN743942W',
+  'mc_fee' => '0.01',
+  'resend' => 'true',
+  'payment_type' => 'instant',
+  'notify_version' => '3.6',
+  'payer_email' => 'to.den.volkov@gmail.com',
+  'receiver_email' => 'info@bettime.info',
+  'tax' => '0.00',
+  'residence_country' => 'RU',
+)
+2012/08/16 00:40:59 [info] [application] Transaction begins
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (55)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 00:40:59 [info] [transaction] Transaction Verified
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (72)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 00:40:59 [info] [application] Transaction Payment is Complete
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (75)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 00:41:20 [info] [application] Creating new order
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (110)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 00:41:21 [info] [application] Order succesfully saved, trying to send email
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (138)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 00:41:25 [info] [application] Order succesfully saved, email sent
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (142)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 00:40:38 [info] [application] $_POST=array (
+  'handling_amount' => '0.00',
+  'discount' => '0.00',
+  'insurance_amount' => '0.00',
+  'payer_id' => 'F6EYBBC9JSYYC',
+  'btn_id' => '49623607',
+  'ipn_track_id' => 'df5173eb3121b',
+  'shipping' => '0.00',
+  'charset' => 'KOI8_R',
+  'payment_gross' => '',
+  'shipping_discount' => '0.00',
+  'verify_sign' => 'Ak9cwATDat.9t0qH.vatF6NwOuf3ADRoZQyxRpsYVOOXzPu8fWijciHK',
+  'item_name' => '1centButton',
+  'txn_type' => 'web_accept',
+  'receiver_id' => 'AN2KMJMRLQTLC',
+  'payment_fee' => '',
+  'mc_currency' => 'EUR',
+  'transaction_subject' => '1centButton',
+  'shipping_method' => 'Default',
+  'custom' => '',
+  'protection_eligibility' => 'Ineligible',
+  'payer_status' => 'verified',
+  'first_name' => 'äÅÎÉÓ',
+  'mc_gross' => '0.01',
+  'payment_date' => '13:54:56 Aug 12, 2012 PDT',
+  'payment_status' => 'Completed',
+  'quantity' => '1',
+  'business' => 'info@bettime.info',
+  'item_number' => 'TIP1',
+  'last_name' => '÷ÏÌËÏ×',
+  'payer_business_name' => 'N-Systems',
+  'txn_id' => '3AT994841R5024547',
+  'mc_fee' => '0.01',
+  'resend' => 'true',
+  'payment_type' => 'instant',
+  'notify_version' => '3.6',
+  'payer_email' => 'to.den.volkov@gmail.com',
+  'receiver_email' => 'info@bettime.info',
+  'tax' => '0.00',
+  'residence_country' => 'RU',
+)
+2012/08/16 00:41:21 [info] [application] Transaction begins
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (55)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 00:41:21 [info] [transaction] Transaction Verified
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (72)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 00:41:21 [info] [application] Transaction Payment is Complete
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (75)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 00:41:22 [info] [application] Creating new order
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (110)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 00:41:26 [info] [application] Order succesfully saved, trying to send email
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (138)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 00:41:27 [info] [application] Order succesfully saved, email sent
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (142)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 22:06:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "robots.txt".' in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CWebApplication.php(135): CWebApplication->runController('robots.txt')
+#1 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/robots.txt
+---
+2012/08/16 22:59:26 [info] [application] $_POST=array (
+  'ok_receiver_email' => 'info@bettime.info',
+  'ok_receiver_phone' => '7-9129221955',
+  'ok_receiver_id' => '489320685',
+  'ok_receiver_wallet' => 'OK669203365',
+  'ok_payer_country' => 'Afghanistan',
+  'ok_payer_city' => 'Payer City',
+  'ok_payer_country_code' => 'AF',
+  'ok_payer_address_name' => 'Legal',
+  'ok_payer_state' => 'Payer State',
+  'ok_payer_street' => 'Payer Address',
+  'ok_payer_zip' => '123456',
+  'ok_payer_address_status' => 'confirmed',
+  'ok_payer_phone' => '777-777777',
+  'ok_payer_first_name' => 'Payer First Name',
+  'ok_payer_last_name' => 'Payer Last Name',
+  'ok_payer_business_name' => 'Payer Business Name',
+  'ok_payer_email' => 'payer@okpay.com',
+  'ok_payer_id' => '123456789',
+  'ok_payer_reputation' => '100',
+  'ok_payer_status' => 'verified',
+  'ok_txn_id' => '1',
+  'ok_txn_parent_id' => '10',
+  'ok_txn_kind' => 'payment_link',
+  'ok_txn_payment_type' => 'instant',
+  'ok_txn_gross' => '50',
+  'ok_txn_amount' => '50',
+  'ok_txn_fee' => '10.00',
+  'ok_txn_currency' => 'EUR',
+  'ok_txn_exchange_rate' => '1.1234',
+  'ok_txn_datetime' => '2012-08-16 18:57:46',
+  'ok_txn_status' => 'completed',
+  'ok_txn_handling' => '100.00',
+  'ok_txn_shipping' => '10.00',
+  'ok_txn_shipping_method' => 'Payment Shipping Method',
+  'ok_txn_tax' => '1.00',
+  'ok_txn_comment' => 'Payment Comment',
+  'ok_invoice' => 'Payment Invoice',
+  'ok_items_count' => '1',
+  'ok_item_1_id' => 'TIP1',
+  'ok_item_1_name' => 'TIP1',
+  'ok_item_1_article' => 'TIP1',
+  'ok_item_1_type' => 'Tangible Good',
+  'ok_item_1_quantity' => '1',
+  'ok_item_1_gross' => '16.00',
+  'ok_item_1_amount' => '9.00',
+  'ok_item_1_fee' => '1.00',
+  'ok_item_1_handling' => '1.00',
+  'ok_item_1_shipping' => '4.00',
+  'ok_item_1_tax' => '1.00',
+  'ok_item_1_custom_1_title' => 'Item Custom 1 Title',
+  'ok_item_1_custom_1_value' => 'Item Custom 1 Value',
+  'ok_item_1_custom_2_title' => 'Item Custom 2 Title',
+  'ok_item_1_custom_2_value' => 'Item Custom 2 Value',
+  'ok_ipn_test' => '1648083',
+)
+2012/08/16 22:59:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "okpay/listener".' in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CWebApplication.php(135): CWebApplication->runController('okpay/listener')
+#1 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/okpay/listener
+---
+2012/08/16 23:00:57 [info] [application] $_POST=array (
+  'ok_receiver_email' => 'info@bettime.info',
+  'ok_receiver_phone' => '7-9129221955',
+  'ok_receiver_id' => '489320685',
+  'ok_receiver_wallet' => 'OK669203365',
+  'ok_payer_country' => 'Afghanistan',
+  'ok_payer_city' => 'Payer City',
+  'ok_payer_country_code' => 'AF',
+  'ok_payer_address_name' => 'Legal',
+  'ok_payer_state' => 'Payer State',
+  'ok_payer_street' => 'Payer Address',
+  'ok_payer_zip' => '123456',
+  'ok_payer_address_status' => 'confirmed',
+  'ok_payer_phone' => '777-777777',
+  'ok_payer_first_name' => 'Payer First Name',
+  'ok_payer_last_name' => 'Payer Last Name',
+  'ok_payer_business_name' => 'Payer Business Name',
+  'ok_payer_email' => 'payer@okpay.com',
+  'ok_payer_id' => '123456789',
+  'ok_payer_reputation' => '100',
+  'ok_payer_status' => 'verified',
+  'ok_txn_id' => '1',
+  'ok_txn_parent_id' => '10',
+  'ok_txn_kind' => 'payment_link',
+  'ok_txn_payment_type' => 'instant',
+  'ok_txn_gross' => '50',
+  'ok_txn_amount' => '50',
+  'ok_txn_fee' => '10.00',
+  'ok_txn_currency' => 'EUR',
+  'ok_txn_exchange_rate' => '1.1234',
+  'ok_txn_datetime' => '2012-08-16 18:57:46',
+  'ok_txn_status' => 'completed',
+  'ok_txn_handling' => '100.00',
+  'ok_txn_shipping' => '10.00',
+  'ok_txn_shipping_method' => 'Payment Shipping Method',
+  'ok_txn_tax' => '1.00',
+  'ok_txn_comment' => 'Payment Comment',
+  'ok_invoice' => 'Payment Invoice',
+  'ok_items_count' => '1',
+  'ok_item_1_id' => 'TIP1',
+  'ok_item_1_name' => 'TIP1',
+  'ok_item_1_article' => 'TIP1',
+  'ok_item_1_type' => 'Tangible Good',
+  'ok_item_1_quantity' => '1',
+  'ok_item_1_gross' => '16.00',
+  'ok_item_1_amount' => '9.00',
+  'ok_item_1_fee' => '1.00',
+  'ok_item_1_handling' => '1.00',
+  'ok_item_1_shipping' => '4.00',
+  'ok_item_1_tax' => '1.00',
+  'ok_item_1_custom_1_title' => 'Item Custom 1 Title',
+  'ok_item_1_custom_1_value' => 'Item Custom 1 Value',
+  'ok_item_1_custom_2_title' => 'Item Custom 2 Title',
+  'ok_item_1_custom_2_value' => 'Item Custom 2 Value',
+  'ok_ipn_test' => '1648083',
+  'ok_ipn_resend' => 'true',
+)
+2012/08/16 23:01:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "processokpay  ".' in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CController.php:484
+Stack trace:
+#0 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CController.php(271): CController->missingAction('processokpay  ')
+#1 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CWebApplication.php(276): CController->run('processokpay  ')
+#2 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CWebApplication.php(135): CWebApplication->runController('order/order/pro...')
+#3 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/okpay/listener
+---
+2012/08/16 23:01:18 [info] [application] $_COOKIE=array (
+  'PHPSESSID' => 'd9e9116850b019c8b0727b9bfbc8ec88',
+)
+2012/08/16 23:01:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "processokpay  ".' in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CController.php:484
+Stack trace:
+#0 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CController.php(271): CController->missingAction('processokpay  ')
+#1 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CWebApplication.php(276): CController->run('processokpay  ')
+#2 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/web/CWebApplication.php(135): CWebApplication->runController('order/order/pro...')
+#3 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/okpay/listener
+---
+2012/08/16 23:01:47 [info] [application] $_COOKIE=array (
+  'PHPSESSID' => 'd9e9116850b019c8b0727b9bfbc8ec88',
+)
+2012/08/16 23:02:00 [info] [okpay] Transaction begins
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (196)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 23:02:01 [info] [okpay] NO HTTP Error!
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (212)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 23:02:01 [info] [okpay] Transaction is INVALID
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (327)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 23:02:07 [info] [application] $_POST=array (
+  'ok_receiver_email' => 'info@bettime.info',
+  'ok_receiver_phone' => '7-9129221955',
+  'ok_receiver_id' => '489320685',
+  'ok_receiver_wallet' => 'OK669203365',
+  'ok_payer_country' => 'Afghanistan',
+  'ok_payer_city' => 'Payer City',
+  'ok_payer_country_code' => 'AF',
+  'ok_payer_address_name' => 'Legal',
+  'ok_payer_state' => 'Payer State',
+  'ok_payer_street' => 'Payer Address',
+  'ok_payer_zip' => '123456',
+  'ok_payer_address_status' => 'confirmed',
+  'ok_payer_phone' => '777-777777',
+  'ok_payer_first_name' => 'Payer First Name',
+  'ok_payer_last_name' => 'Payer Last Name',
+  'ok_payer_business_name' => 'Payer Business Name',
+  'ok_payer_email' => 'payer@okpay.com',
+  'ok_payer_id' => '123456789',
+  'ok_payer_reputation' => '100',
+  'ok_payer_status' => 'verified',
+  'ok_txn_id' => '1',
+  'ok_txn_parent_id' => '10',
+  'ok_txn_kind' => 'payment_link',
+  'ok_txn_payment_type' => 'instant',
+  'ok_txn_gross' => '50',
+  'ok_txn_amount' => '50',
+  'ok_txn_fee' => '10.00',
+  'ok_txn_currency' => 'EUR',
+  'ok_txn_exchange_rate' => '1.1234',
+  'ok_txn_datetime' => '2012-08-16 18:57:46',
+  'ok_txn_status' => 'completed',
+  'ok_txn_handling' => '100.00',
+  'ok_txn_shipping' => '10.00',
+  'ok_txn_shipping_method' => 'Payment Shipping Method',
+  'ok_txn_tax' => '1.00',
+  'ok_txn_comment' => 'Payment Comment',
+  'ok_invoice' => 'Payment Invoice',
+  'ok_items_count' => '1',
+  'ok_item_1_id' => 'TIP1',
+  'ok_item_1_name' => 'TIP1',
+  'ok_item_1_article' => 'TIP1',
+  'ok_item_1_type' => 'Tangible Good',
+  'ok_item_1_quantity' => '1',
+  'ok_item_1_gross' => '16.00',
+  'ok_item_1_amount' => '9.00',
+  'ok_item_1_fee' => '1.00',
+  'ok_item_1_handling' => '1.00',
+  'ok_item_1_shipping' => '4.00',
+  'ok_item_1_tax' => '1.00',
+  'ok_item_1_custom_1_title' => 'Item Custom 1 Title',
+  'ok_item_1_custom_1_value' => 'Item Custom 1 Value',
+  'ok_item_1_custom_2_title' => 'Item Custom 2 Title',
+  'ok_item_1_custom_2_value' => 'Item Custom 2 Value',
+  'ok_ipn_test' => '1648083',
+  'ok_ipn_resend' => 'true',
+)
+2012/08/16 23:02:07 [info] [okpay] Transaction begins
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (196)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 23:02:07 [info] [okpay] NO HTTP Error!
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (212)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 23:02:08 [info] [okpay] Transaction is TEST
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (332)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 23:03:13 [info] [application] $_POST=array (
+  'ok_receiver_email' => 'info@bettime.info',
+  'ok_receiver_phone' => '7-9129221955',
+  'ok_receiver_id' => '489320685',
+  'ok_receiver_wallet' => 'OK669203365',
+  'ok_payer_country' => 'Afghanistan',
+  'ok_payer_city' => 'Payer City',
+  'ok_payer_country_code' => 'AF',
+  'ok_payer_address_name' => 'Legal',
+  'ok_payer_state' => 'Payer State',
+  'ok_payer_street' => 'Payer Address',
+  'ok_payer_zip' => '123456',
+  'ok_payer_address_status' => 'confirmed',
+  'ok_payer_phone' => '777-777777',
+  'ok_payer_first_name' => 'Payer First Name',
+  'ok_payer_last_name' => 'Payer Last Name',
+  'ok_payer_business_name' => 'Payer Business Name',
+  'ok_payer_email' => 'payer@okpay.com',
+  'ok_payer_id' => '123456789',
+  'ok_payer_reputation' => '100',
+  'ok_payer_status' => 'verified',
+  'ok_txn_id' => '1',
+  'ok_txn_parent_id' => '10',
+  'ok_txn_kind' => 'payment_link',
+  'ok_txn_payment_type' => 'instant',
+  'ok_txn_gross' => '50',
+  'ok_txn_amount' => '50',
+  'ok_txn_fee' => '10.00',
+  'ok_txn_currency' => 'EUR',
+  'ok_txn_exchange_rate' => '1.1234',
+  'ok_txn_datetime' => '2012-08-16 18:57:46',
+  'ok_txn_status' => 'completed',
+  'ok_txn_handling' => '100.00',
+  'ok_txn_shipping' => '10.00',
+  'ok_txn_shipping_method' => 'Payment Shipping Method',
+  'ok_txn_tax' => '1.00',
+  'ok_txn_comment' => 'Payment Comment',
+  'ok_invoice' => 'Payment Invoice',
+  'ok_items_count' => '1',
+  'ok_item_1_id' => 'TIP1',
+  'ok_item_1_name' => 'TIP1',
+  'ok_item_1_article' => 'TIP1',
+  'ok_item_1_type' => 'Tangible Good',
+  'ok_item_1_quantity' => '1',
+  'ok_item_1_gross' => '16.00',
+  'ok_item_1_amount' => '9.00',
+  'ok_item_1_fee' => '1.00',
+  'ok_item_1_handling' => '1.00',
+  'ok_item_1_shipping' => '4.00',
+  'ok_item_1_tax' => '1.00',
+  'ok_item_1_custom_1_title' => 'Item Custom 1 Title',
+  'ok_item_1_custom_1_value' => 'Item Custom 1 Value',
+  'ok_item_1_custom_2_title' => 'Item Custom 2 Title',
+  'ok_item_1_custom_2_value' => 'Item Custom 2 Value',
+  'ok_ipn_test' => '1648083',
+  'ok_ipn_resend' => 'true',
+)
+2012/08/16 23:03:14 [info] [okpay] Transaction begins
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (196)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 23:03:14 [info] [okpay] NO HTTP Error!
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (212)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 23:03:14 [info] [okpay] Transaction is TEST
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (332)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 23:05:43 [info] [application] $_POST=array (
+  'ok_receiver_email' => 'info@bettime.info',
+  'ok_receiver_phone' => '7-9129221955',
+  'ok_receiver_id' => '489320685',
+  'ok_receiver_wallet' => 'OK669203365',
+  'ok_payer_country' => 'France',
+  'ok_payer_city' => 'Payer City',
+  'ok_payer_country_code' => 'FR',
+  'ok_payer_address_name' => 'Legal',
+  'ok_payer_state' => 'Payer State',
+  'ok_payer_street' => 'Payer Address',
+  'ok_payer_zip' => '123456',
+  'ok_payer_address_status' => 'confirmed',
+  'ok_payer_phone' => '777-777777',
+  'ok_payer_first_name' => 'Payer First Name',
+  'ok_payer_last_name' => 'Payer Last Name',
+  'ok_payer_business_name' => 'Payer Business Name',
+  'ok_payer_email' => 'to-denis@yandex.ru',
+  'ok_payer_id' => '123456789',
+  'ok_payer_reputation' => '100',
+  'ok_payer_status' => 'verified',
+  'ok_txn_id' => '1',
+  'ok_txn_parent_id' => '10',
+  'ok_txn_kind' => 'payment_link',
+  'ok_txn_payment_type' => 'instant',
+  'ok_txn_gross' => '50',
+  'ok_txn_amount' => '50',
+  'ok_txn_fee' => '10.00',
+  'ok_txn_currency' => 'EUR',
+  'ok_txn_exchange_rate' => '1.1234',
+  'ok_txn_datetime' => '2012-08-16 19:03:32',
+  'ok_txn_status' => 'completed',
+  'ok_txn_handling' => '100.00',
+  'ok_txn_shipping' => '10.00',
+  'ok_txn_shipping_method' => 'Payment Shipping Method',
+  'ok_txn_tax' => '1.00',
+  'ok_txn_comment' => 'Payment Comment',
+  'ok_invoice' => 'Payment Invoice',
+  'ok_items_count' => '1',
+  'ok_item_1_id' => 'TIP1',
+  'ok_item_1_name' => 'TIP1',
+  'ok_item_1_article' => 'TIP1',
+  'ok_item_1_type' => 'Digital Product',
+  'ok_item_1_quantity' => '1',
+  'ok_item_1_gross' => '50',
+  'ok_item_1_amount' => '50',
+  'ok_item_1_fee' => '0',
+  'ok_item_1_handling' => '0',
+  'ok_item_1_shipping' => '0',
+  'ok_item_1_tax' => '1.00',
+  'ok_item_1_custom_1_title' => 'Item Custom 1 Title',
+  'ok_item_1_custom_1_value' => 'Item Custom 1 Value',
+  'ok_item_1_custom_2_title' => 'Item Custom 2 Title',
+  'ok_item_1_custom_2_value' => 'Item Custom 2 Value',
+  'ok_ipn_test' => '1648084',
+)
+2012/08/16 23:05:59 [info] [okpay] Transaction begins
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (196)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 23:05:59 [info] [okpay] NO HTTP Error!
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (212)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 23:05:59 [info] [okpay] Transaction is TEST
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (332)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 23:20:00 [info] [application] $_POST=array (
+  'ok_receiver_email' => 'info@bettime.info',
+  'ok_receiver_phone' => '7-9129221955',
+  'ok_receiver_id' => '489320685',
+  'ok_receiver_wallet' => 'OK669203365',
+  'ok_payer_country' => 'France',
+  'ok_payer_city' => 'Payer City',
+  'ok_payer_country_code' => 'FR',
+  'ok_payer_address_name' => 'Legal',
+  'ok_payer_state' => 'Payer State',
+  'ok_payer_street' => 'Payer Address',
+  'ok_payer_zip' => '123456',
+  'ok_payer_address_status' => 'confirmed',
+  'ok_payer_phone' => '777-777777',
+  'ok_payer_first_name' => 'Payer First Name',
+  'ok_payer_last_name' => 'Payer Last Name',
+  'ok_payer_business_name' => 'Payer Business Name',
+  'ok_payer_email' => 'to-denis@yandex.ru',
+  'ok_payer_id' => '123456789',
+  'ok_payer_reputation' => '100',
+  'ok_payer_status' => 'verified',
+  'ok_txn_id' => '1',
+  'ok_txn_parent_id' => '10',
+  'ok_txn_kind' => 'payment_link',
+  'ok_txn_payment_type' => 'instant',
+  'ok_txn_gross' => '50',
+  'ok_txn_amount' => '50',
+  'ok_txn_fee' => '10.00',
+  'ok_txn_currency' => 'EUR',
+  'ok_txn_exchange_rate' => '1.1234',
+  'ok_txn_datetime' => '2012-08-16 19:03:32',
+  'ok_txn_status' => 'completed',
+  'ok_txn_handling' => '100.00',
+  'ok_txn_shipping' => '10.00',
+  'ok_txn_shipping_method' => 'Payment Shipping Method',
+  'ok_txn_tax' => '1.00',
+  'ok_txn_comment' => 'Payment Comment',
+  'ok_invoice' => 'Payment Invoice',
+  'ok_items_count' => '1',
+  'ok_item_1_id' => 'TIP1',
+  'ok_item_1_name' => 'TIP1',
+  'ok_item_1_article' => 'TIP1',
+  'ok_item_1_type' => 'Digital Product',
+  'ok_item_1_quantity' => '1',
+  'ok_item_1_gross' => '50',
+  'ok_item_1_amount' => '50',
+  'ok_item_1_fee' => '0',
+  'ok_item_1_handling' => '0',
+  'ok_item_1_shipping' => '0',
+  'ok_item_1_tax' => '1.00',
+  'ok_item_1_custom_1_title' => 'Item Custom 1 Title',
+  'ok_item_1_custom_1_value' => 'Item Custom 1 Value',
+  'ok_item_1_custom_2_title' => 'Item Custom 2 Title',
+  'ok_item_1_custom_2_value' => 'Item Custom 2 Value',
+  'ok_ipn_test' => '1648084',
+  'ok_ipn_resend' => 'true',
+)
+2012/08/16 23:20:01 [info] [okpay] Transaction begins
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (196)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 23:20:01 [info] [okpay] NO HTTP Error!
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (212)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 23:20:01 [info] [okpay] Transaction is TEST
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (332)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 23:21:15 [info] [application] $_POST=array (
+  'ok_receiver_email' => 'info@bettime.info',
+  'ok_receiver_phone' => '7-9129221955',
+  'ok_receiver_id' => '489320685',
+  'ok_receiver_wallet' => 'OK669203365',
+  'ok_payer_country' => 'France',
+  'ok_payer_city' => 'Payer City',
+  'ok_payer_country_code' => 'FR',
+  'ok_payer_address_name' => 'Legal',
+  'ok_payer_state' => 'Payer State',
+  'ok_payer_street' => 'Payer Address',
+  'ok_payer_zip' => '123456',
+  'ok_payer_address_status' => 'confirmed',
+  'ok_payer_phone' => '777-777777',
+  'ok_payer_first_name' => 'Payer First Name',
+  'ok_payer_last_name' => 'Payer Last Name',
+  'ok_payer_business_name' => 'Payer Business Name',
+  'ok_payer_email' => 'to-denis@yandex.ru',
+  'ok_payer_id' => '123456789',
+  'ok_payer_reputation' => '100',
+  'ok_payer_status' => 'verified',
+  'ok_txn_id' => '1',
+  'ok_txn_parent_id' => '10',
+  'ok_txn_kind' => 'payment_link',
+  'ok_txn_payment_type' => 'instant',
+  'ok_txn_gross' => '50',
+  'ok_txn_amount' => '50',
+  'ok_txn_fee' => '10.00',
+  'ok_txn_currency' => 'EUR',
+  'ok_txn_exchange_rate' => '1.1234',
+  'ok_txn_datetime' => '2012-08-16 19:03:32',
+  'ok_txn_status' => 'completed',
+  'ok_txn_handling' => '100.00',
+  'ok_txn_shipping' => '10.00',
+  'ok_txn_shipping_method' => 'Payment Shipping Method',
+  'ok_txn_tax' => '1.00',
+  'ok_txn_comment' => 'Payment Comment',
+  'ok_invoice' => 'Payment Invoice',
+  'ok_items_count' => '1',
+  'ok_item_1_id' => 'TIP1',
+  'ok_item_1_name' => 'TIP1',
+  'ok_item_1_article' => 'TIP1',
+  'ok_item_1_type' => 'Digital Product',
+  'ok_item_1_quantity' => '1',
+  'ok_item_1_gross' => '50',
+  'ok_item_1_amount' => '50',
+  'ok_item_1_fee' => '0',
+  'ok_item_1_handling' => '0',
+  'ok_item_1_shipping' => '0',
+  'ok_item_1_tax' => '1.00',
+  'ok_item_1_custom_1_title' => 'Item Custom 1 Title',
+  'ok_item_1_custom_1_value' => 'Item Custom 1 Value',
+  'ok_item_1_custom_2_title' => 'Item Custom 2 Title',
+  'ok_item_1_custom_2_value' => 'Item Custom 2 Value',
+  'ok_ipn_test' => '1648084',
+  'ok_ipn_resend' => 'true',
+)
+2012/08/16 23:21:15 [info] [okpay] Transaction begins
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (196)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 23:21:16 [info] [okpay] NO HTTP Error!
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (212)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 23:21:16 [info] [okpay] Transaction is incomplete or receiver email dont match. Skipping
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (321)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 23:21:38 [info] [application] $_POST=array (
+  'ok_receiver_email' => 'info@bettime.info',
+  'ok_receiver_phone' => '7-9129221955',
+  'ok_receiver_id' => '489320685',
+  'ok_receiver_wallet' => 'OK669203365',
+  'ok_payer_country' => 'France',
+  'ok_payer_city' => 'Payer City',
+  'ok_payer_country_code' => 'FR',
+  'ok_payer_address_name' => 'Legal',
+  'ok_payer_state' => 'Payer State',
+  'ok_payer_street' => 'Payer Address',
+  'ok_payer_zip' => '123456',
+  'ok_payer_address_status' => 'confirmed',
+  'ok_payer_phone' => '777-777777',
+  'ok_payer_first_name' => 'Payer First Name',
+  'ok_payer_last_name' => 'Payer Last Name',
+  'ok_payer_business_name' => 'Payer Business Name',
+  'ok_payer_email' => 'to-denis@yandex.ru',
+  'ok_payer_id' => '123456789',
+  'ok_payer_reputation' => '100',
+  'ok_payer_status' => 'verified',
+  'ok_txn_id' => '1',
+  'ok_txn_parent_id' => '10',
+  'ok_txn_kind' => 'payment_link',
+  'ok_txn_payment_type' => 'instant',
+  'ok_txn_gross' => '50',
+  'ok_txn_amount' => '50',
+  'ok_txn_fee' => '10.00',
+  'ok_txn_currency' => 'EUR',
+  'ok_txn_exchange_rate' => '1.1234',
+  'ok_txn_datetime' => '2012-08-16 19:03:32',
+  'ok_txn_status' => 'completed',
+  'ok_txn_handling' => '100.00',
+  'ok_txn_shipping' => '10.00',
+  'ok_txn_shipping_method' => 'Payment Shipping Method',
+  'ok_txn_tax' => '1.00',
+  'ok_txn_comment' => 'Payment Comment',
+  'ok_invoice' => 'Payment Invoice',
+  'ok_items_count' => '1',
+  'ok_item_1_id' => 'TIP1',
+  'ok_item_1_name' => 'TIP1',
+  'ok_item_1_article' => 'TIP1',
+  'ok_item_1_type' => 'Digital Product',
+  'ok_item_1_quantity' => '1',
+  'ok_item_1_gross' => '50',
+  'ok_item_1_amount' => '50',
+  'ok_item_1_fee' => '0',
+  'ok_item_1_handling' => '0',
+  'ok_item_1_shipping' => '0',
+  'ok_item_1_tax' => '1.00',
+  'ok_item_1_custom_1_title' => 'Item Custom 1 Title',
+  'ok_item_1_custom_1_value' => 'Item Custom 1 Value',
+  'ok_item_1_custom_2_title' => 'Item Custom 2 Title',
+  'ok_item_1_custom_2_value' => 'Item Custom 2 Value',
+  'ok_ipn_test' => '1648084',
+  'ok_ipn_resend' => 'true',
+)
+2012/08/16 23:21:38 [info] [okpay] Transaction begins
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (196)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 23:21:39 [info] [okpay] NO HTTP Error!
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (212)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)
+2012/08/16 23:21:39 [info] [okpay] Transaction is incomplete or receiver email dont match. Skipping
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/protected/modules/order/controllers/OrderController.php (321)
+in /nfs/c09/h01/mnt/130213/domains/bettime.info/html/index.php (15)

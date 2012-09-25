@@ -1,0 +1,11 @@
+User-agent: *
+Disallow: /yupe/backend
+Disallow: /login
+Disallow: /paypal/listener
+Disallow: /okpay/listener
+Disallow: /paypal/checkout
+Disallow: /paypal/confirmation
+Disallow: /paypal/cancel
+Disallow: /user/account/login
+Disallow: /framework
+Disallow: /yupe
