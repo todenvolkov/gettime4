@@ -1,1 +1,1 @@
-<h1>Sorry, no more tips available this time. Try again tomorrow</h1>
+<h1>Betting tips are not available now. Please come back later</h1>

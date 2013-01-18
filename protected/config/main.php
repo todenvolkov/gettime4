@@ -1,26 +1,26 @@
 <?php
-// –Њ—Б–љ–Њ–≤–љ–Њ–є –Ї–Њ–љ—Д–Є–≥—Г—А–∞—Ж–Є–Њ–љ–љ—Л–є —Д–∞–є–ї Yii –Є –Ѓ–њ–Є! (–њ–Њ–і—А–Њ–±–љ–µ–µ http://www.yiiframework.ru/doc/guide/ru/basics.application)
+
 return array(
     'basePath' => dirname(__FILE__) . DIRECTORY_SEPARATOR . '..',
-    // –Ї–Њ–љ—В—А–Њ–ї–ї–µ—А –њ–Њ —Г–Љ–Њ–ї—З–∞–љ–Є—О
+
     'defaultController' => 'site',
-    // –љ–∞–Ј–≤–∞–љ–Є–µ –њ—А–Є–ї–Њ–∂–µ–љ–Є—П
+
     'name' => 'BetTime.Info',
-    // —П–Ј—Л–Ї –њ–Њ —Г–Љ–Њ–ї—З–∞–љ–Є—О
+
     'language' => 'en',
-    // —В–µ–Љ–∞ –Њ—Д–Њ—А–Љ–ї–µ–љ–Є—П –њ–Њ —Г–Љ–Њ–ї—З–∞–љ–Є—О
+
     'theme' => 'nsystems',
-    // preloading 'log' component
+
     'preload' => array('log','bootstrap'),
 
-    // –њ–Њ–і–Ї–ї—О—З–µ–љ–Є–µ –њ—Г—В–µ–є
+
     'import' => array(
         'application.components.*',
-        'ext.shoppingCart.*',
+      'ext.shoppingCart.*',
         'ext.KEmail.KEmail',
 
       //  'application.components.shoppingCart.*',
-        // –њ–Њ–і–Ї–ї—О—З–µ–љ–Є–µ –њ—Г—В–µ–є –Є–Ј –Њ—Б–љ–Њ–≤–љ—Л—Е –Љ–Њ–і—Г–ї–µ–є 
+
         'application.modules.user.UserModule',
         'application.modules.user.models.*',
         'application.modules.user.forms.*',
@@ -32,12 +32,12 @@ return array(
         'application.modules.contentblock.models.*',
         'application.modules.comment.models.*',
         'application.modules.image.models.*',
-        'application.modules.vote.models.*',
+//        'application.modules.vote.models.*',
         'application.modules.blog.models.*',
         'application.modules.menu.models.*',
         'application.modules.menu.controllers.*',
-        'application.modules.portfolio.models.*',
-        'application.modules.portfolio.controllers.*',
+//        'application.modules.portfolio.models.*',
+//        'application.modules.portfolio.controllers.*',
         'application.modules.tips.models.*',
         'application.modules.tips.controllers.*',
         'application.modules.tips.widgets.*',
@@ -49,23 +49,23 @@ return array(
         'application.modules.cart.controllers.*',
         'application.modules.cart.widgets.*',
 
-        'application.modules.portfolio.widgets.*',
-        'application.modules.businesstypes.models.*',
-        'application.modules.businesstypes.controllers.*',
+//        'application.modules.portfolio.widgets.*',
+//        'application.modules.businesstypes.models.*',
+//        'application.modules.businesstypes.controllers.*',
         'application.modules.yupe.controllers.*',
         'application.modules.yupe.widgets.*',
         'application.modules.yupe.helpers.*',
         'application.modules.yupe.models.*',
         'application.modules.yupe.components.*',
 
-        'application.modules.social.widgets.ysc.*',
-
-        'application.modules.social.components.*',
-        'application.modules.social.models.*', 
-        'application.modules.social.extensions.eoauth.*',
-        'application.modules.social.extensions.eoauth.lib.*',
-        'application.modules.social.extensions.lightopenid.*',
-        'application.modules.social.extensions.eauth.services.*',
+//        'application.modules.social.widgets.ysc.*',
+//
+//        'application.modules.social.components.*',
+//        'application.modules.social.models.*',
+//        'application.modules.social.extensions.eoauth.*',
+//        'application.modules.social.extensions.eoauth.lib.*',
+//        'application.modules.social.extensions.lightopenid.*',
+//        'application.modules.social.extensions.eauth.services.*',
     ),
 
     // –Ї–Њ–љ—Д–Є–≥—Г—А–Є—А–Њ–≤–∞–љ–Є–µ –Њ—Б–љ–Њ–≤–љ—Л—Е –Ї–Њ–Љ–њ–Њ–љ–µ–љ—В–Њ–≤ (–њ–Њ–і—А–Њ–±–љ–µ–µ http://www.yiiframework.ru/doc/guide/ru/basics.component)
@@ -100,19 +100,19 @@ return array(
             'class' => 'application.modules.social.extensions.lightopenid.loid',
         ),
 
-        // —Н–Ї—Б—В–µ–љ—И–љ –і–ї—П –∞–≤—В–Њ—А–Є–Ј–∞—Ж–Є–Є —З–µ—А–µ–Ј —Б–Њ—Ж–Є–∞–ї—М–љ—Л–µ —Б–µ—В–Є –њ–Њ–і—А–Њ–±–љ–µ–µ http://habrahabr.ru/post/129804/
-        'eauth' => array(
-            'class' => 'application.modules.social.extensions.eauth.EAuth',
-            'popup' => true, // Use the popup window instead of redirecting.
-            'services' => array( // You can change the providers and their classes.
-                'google' => array(
-                  'class' => 'CustomGoogleService',
-                ),
-                'yandex' => array(
-                   'class' => 'CustomYandexService',
-                ),
-            ),
-        ),
+//        // —Н–Ї—Б—В–µ–љ—И–љ –і–ї—П –∞–≤—В–Њ—А–Є–Ј–∞—Ж–Є–Є —З–µ—А–µ–Ј —Б–Њ—Ж–Є–∞–ї—М–љ—Л–µ —Б–µ—В–Є –њ–Њ–і—А–Њ–±–љ–µ–µ http://habrahabr.ru/post/129804/
+//        'eauth' => array(
+//            'class' => 'application.modules.social.extensions.eauth.EAuth',
+//            'popup' => true, // Use the popup window instead of redirecting.
+//            'services' => array( // You can change the providers and their classes.
+//                'google' => array(
+//                  'class' => 'CustomGoogleService',
+//                ),
+//                'yandex' => array(
+//                   'class' => 'CustomYandexService',
+//                ),
+//            ),
+//        ),
 
         // –Ї–Њ–Љ–њ–Њ–љ–µ–љ—В –і–ї—П –Њ—В–њ—А–∞–≤–Ї–Є –њ–Њ—З—В—Л
         'mail' => array(
@@ -131,7 +131,10 @@ return array(
 
                 '/pages/<slug>' => 'page/page/show',
                 '/story/<title>' => 'news/news/show/',
-
+                '/post/<slug>.html' => 'blog/post/show/',
+                             '/posts/tag/<tag>' => 'blog/post/list/',
+                             '/blog/<slug>' => 'blog/blog/show/',
+                             '/blogs/' => 'blog/blog/index/',
 
                 '/<slug:service>' => 'page/page/show',
                 '/<slug:contacts>' => 'page/page/show',
@@ -178,7 +181,7 @@ return array(
 
         // –љ–∞—Б—В—А–Њ–є–Ї–Є –Ї—Н—И–Є—А–Њ–≤–∞–љ–Є—П, –њ–Њ–і—А–Њ–±–љ–µ–µ http://www.yiiframework.ru/doc/guide/ru/caching.overview
         'cache' => array(
-            'class' => 'CFileCache',
+            'class' => 'CDummyCache',
         ),
 
         // –њ–∞—А–∞–Љ–µ—В—А—Л –ї–Њ–≥–Є—А–Њ–≤–∞–љ–Є—П, –њ–Њ–і—А–Њ–±–љ–µ–µ http://www.yiiframework.ru/doc/guide/ru/topics.logging
@@ -200,11 +203,11 @@ return array(
                                 ),
                 ),
                 //–њ—А–Њ—Д–∞–є–ї–µ—А –Ј–∞–њ—А–Њ—Б–Њ–≤ –Ї –±–∞–Ј–µ –і–∞–љ–љ—Л—Е, –љ–∞ –њ—А–Њ–і–∞–Ї—И–љ —Б–µ—А–≤–µ—А–∞—Е —А–µ–Ї–Њ–Љ–µ–љ–і—Г–µ—В—Б—П –Њ—В–Ї–ї—О—З–Є—В—М
-//                array(
-//                    'class'=>'application.modules.yupe.extensions.db_profiler.DbProfileLogRoute',
-//                    'countLimit' => 1, // How many times the same query should be executed to be considered inefficient
-//                    'slowQueryMin' => 0.01, // Minimum time for the query to be slow
-//                ),
+                array(
+                    'class'=>'application.modules.yupe.extensions.db_profiler.DbProfileLogRoute',
+                    'countLimit' => 1, // How many times the same query should be executed to be considered inefficient
+                    'slowQueryMin' => 0.01, // Minimum time for the query to be slow
+                ),
             ),
         ),
     ),
@@ -217,24 +220,24 @@ return array(
         'blog' => array(
             'class' => 'application.modules.blog.BlogModule',
         ),
-        'social' => array(
-            'class' => 'application.modules.social.SocialModule',
-        ),
+//        'social' => array(
+//            'class' => 'application.modules.social.SocialModule',
+//        ),
         'comment' => array(
             'class' => 'application.modules.comment.CommentModule',
         ),
-        'dictionary' => array(
-            'class' => 'application.modules.dictionary.DictionaryModule',
-        ),
-        'gallery' => array(
-            'class' => 'application.modules.gallery.GalleryModule',
-        ),
-        'vote' => array(
-            'class' => 'application.modules.vote.VoteModule',
-        ),
-        'contest' => array(
-            'class' => 'application.modules.contest.ContestModule',
-        ),
+//        'dictionary' => array(
+//            'class' => 'application.modules.dictionary.DictionaryModule',
+//        ),
+//        'gallery' => array(
+//            'class' => 'application.modules.gallery.GalleryModule',
+//        ),
+//        'vote' => array(
+//            'class' => 'application.modules.vote.VoteModule',
+//        ),
+//        'contest' => array(
+//            'class' => 'application.modules.contest.ContestModule',
+//        ),
         'image' => array(
             'class' => 'application.modules.image.ImageModule',
         ),
@@ -242,9 +245,9 @@ return array(
             'class' => 'application.modules.yupe.YupeModule',
             'brandUrl' => 'http://yupe.ru?from=engine',
         ),
-        'install' => array(
-            'class' => 'application.modules.install.InstallModule',
-        ),
+//        'install' => array(
+//            'class' => 'application.modules.install.InstallModule',
+//        ),
         'category' => array(
             'class' => 'application.modules.category.CategoryModule',
         ),
@@ -268,7 +271,7 @@ return array(
             'documentRoot' => $_SERVER['DOCUMENT_ROOT'],
             'avatarsDir' => '/yupe/avatars',
             'avatarExtensions' => array('jpg', 'png', 'gif'),
-            'notifyEmailFrom' => 'test@test.ru',
+            'notifyEmailFrom' => 'info@bettime.info',
             'urlRules' => array(
               'user/people/<username:\w+>/<mode:(topics|comments)>' => 'user/people/userInfo',
               'user/people/<username:\w+>' => 'user/people/userInfo',

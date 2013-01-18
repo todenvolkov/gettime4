@@ -206,7 +206,7 @@ background-color: #000;
 }
 .time
 {
-    font-family: 'Facebook Letter Faces', Calibri;
+    font-family: Calibri;
     color: white;
     font-weight: bold;
     font-size: 50px;
@@ -239,7 +239,7 @@ h3 .time
 }
 .time2
 {
-    font-family: 'Facebook Letter Faces', Calibri;
+    font-family: Calibri;
     color: white;
     font-weight: bold;
 
@@ -248,12 +248,12 @@ h3 .time
 
 .slogan
 {
-    font-family: 'Chalkduster';
-    font-size: 14px;
-    color: #fff;
-    position: relative;
-    top: -26px;
-    left: 11px;
+    color: #FFFFFF;
+      font-family: Comic Sans MS;
+      font-size: 16px;
+      left: 1px;
+      position: relative;
+      top: -37px;
 
 }
 
@@ -284,12 +284,33 @@ h1.logo
     background-repeat: repeat-y;
     overflow: hidden;
     background-position: -2px;
+    height: 368px;
 }
+
+.framemiddle_newspage
+{
+    background-image: url('/img/framemiddle.png');
+    background-repeat: repeat-y;
+    overflow: hidden;
+    background-position: -2px;
+/*  height: 368px; */
+}
+
+
 .frametop
 {
     background-image: url('/img/frametop.png') ;
     background-repeat: no-repeat;
     background-position: top;
+    height: 340px;
+
+}
+.frametop2
+{
+    background-image: url('/img/frametop.png') ;
+    background-repeat: no-repeat;
+    background-position: top;
+
 
 }
 
@@ -300,6 +321,7 @@ h1.logo
     background-position: center bottom;
     vertical-align: bottom;
     position: relative;
+    padding-top: 10px;
 
 }
 #main
@@ -314,8 +336,8 @@ background: url('/img/stadium.jpg') no-repeat;
 }
 #footer
 {
-    height:10%;
-               margin-top:-50px;
+    /*height:10%;*/
+               /*margin-top:-50px;*/
             /*   position:relative; */
     width:940px;
     margin-left: auto;
@@ -333,11 +355,33 @@ background: url('/img/stadium.jpg') no-repeat;
     background: url('/img/dot.png') top repeat-x;
     height:20px;
 }
+.portlet
+{
+    text-align: center;
+    font-size: 12px;
+    line-height: 16px;
+}
+.portlet p
+{
+    font-size: 14px;
+    line-height: 16px;
+}
+.portlet ul li
+{
+    font-size: 14px;
+    line-height: 16px;
+}
+.portlet ul
+{
+    list-style-position: inside;
+}
+
 content ul
 {
     list-style: disc;
     padding-left: 20px;
     font-size: 20px;
+
 }
 
 .blackbg
@@ -418,7 +462,7 @@ table.medium thead td
     padding-left: 22px;
     color: lime;
     font-size: 20px;
-    padding-top: 0px;
+    padding-top: 14px;
     padding-bottom: 4px;
 }
 
@@ -453,4 +497,22 @@ table.medium thead td
 .col4
 {
     width: 27px;
+}
+#main label
+{color: #ffffff;}
+
+.tip_of_the_day
+{
+    background: none repeat scroll 0 0 #33bb33;
+
+}
+.summary
+{
+    width: 3px;
+    height: 17px;
+    padding-right: 20px;
+    background-color: #33bb33;
+    float: left;
+    margin-left: 20px;
+    margin-right: 20px;
 }

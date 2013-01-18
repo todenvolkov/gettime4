@@ -3,7 +3,8 @@
 <!--[if IE 7 ]> <html class="ie ie7" lang="en"> <![endif]-->
 <!--[if IE 8 ]> <html class="ie ie8" lang="en"> <![endif]-->
 <!--[if IE 9 ]> <html class="ie ie9" lang="en"> <![endif]-->
-<!--[if gt IE 9]><!--><html lang="en"><!--<![endif]-->
+<!--[if gt IE 9]><!-->
+<html lang="en" xmlns="http://www.w3.org/1999/html"><!--<![endif]-->
 <head>
 <meta charset="utf-8" />
 <meta name="language" content="<?=Yii::app()->language?>" />
@@ -25,6 +26,16 @@
 
 </head>
 <body>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 <div class="container" id="main">
 <div class="row">
   <div class="span-12">
@@ -53,36 +64,37 @@
   </div>
     </div>
 
- <div class="row">
+ <div class="row-fluid">
      <section class="tips">
 
          <div class="span6 framemiddle">
-             <div class="frametop"><img src="/img/blank.gif" width="1" height="13" alt="betting"></div>
+             <div class="frametop"><img src="/img/blank.gif" width="1" height="13" alt="betting">
 
-             <h1 class="date"><span class="todays">Today's</span> betting tips:  <?=date('d.m.Y',time())?> </h1>
+             <h1 class="date"><span class="todays">Live</span><b> betting tips</b>:  <?=date('d.m.Y',time())?> </h1>
              <form action='/paypal/checkout' METHOD='POST' class="paypal_submit">
             <div class="autoheighttips">
             <table class="table bordered medium" >
                 <thead>
-                <td class="choosecolumn"style="width: 52px;">Choose</td>
+                <td class="choosecolumn"style="width: 87px;">Select tip</td>
                 <td class="col1">Tip #</td>
                     <td class="col2">Time (UTC)</td>
-                    <td class="col3">Odd</td>
+                    <td class="col3">Odds</td>
                     <td class="col4">Price</td>
 
                 </thead>
                 <?php  $this->widget('application.modules.tips.widgets.TipsForSale');?>
 
             </table>
+                 <div class="summary"></div> <span class="s" style="color:white"> Tip of the day! Recommended if you buy only one tip </span>
 
             </div>
              <div id="summary"></div>
 
             <?php if (Yii::app()->user->isAuthenticated())
 {?>
-             	<input type='image' name='paypal_submit' id='paypal_submit'  src='https://www.paypal.com/en_US/i/btn/btn_dg_pay_w_paypal.gif' border='0' align='top' alt='Pay with PayPal'/>
-<?php } else {?> <p class="ident">Please, <a href="<?=Yii::app()->request->baseUrl?>/user/account/registration">register</a> or <a href="<?=Yii::app()->request->baseUrl?>/login">sign in</a> to buy tips</p>  <?php } ?>
-             </form>
+             	<input type='image' name='paypal_submit' id='paypal_submit'  src='https://www.paypal.com/en_US/i/btn/btn_dg_pay_w_paypal.gif' border='0' align='top' alt='Pay with PayPal'/> <span class="ident">Instant tips after payment!</span>
+<?php } else {?> <p class="ident">Please, <a href="<?=Yii::app()->request->baseUrl?>/user/account/registration">register</a> or <a href="<?=Yii::app()->request->baseUrl?>/login">sign in</a> to buy tips securely with PayPal</p>  <?php } ?>
+             </form><p>&nbsp;</p></div>
              <div class="framebottom"><img src="/img/blank.gif" width="1" height="13" alt="betting tips"></div>
              </div>
 
@@ -90,8 +102,8 @@
 
 
          <div class="span6 framemiddle">
-             <div class="frametop"><img src="/img/blank.gif" width="1" height="13" alt="betting tips"></div>
-             <h2 class="date"><span class="todays">Last</span> results </h2>
+             <div class="frametop"><img src="/img/blank.gif" width="1" height="13" alt="betting tips">
+             <h1 class="date"><span class="todays">Last betting</span> results </h1>
              <div class="autoheighttips">
              <table class="table bordered small">
                  <thead>
@@ -99,7 +111,7 @@
                      <td><span class="s">Time</span></td>
                      <td><span class="s">Gamename</span></td>
                      <td><span class="s">Bet</span></td>
-                     <td><span class="s">Odd</span></td>
+                     <td><span class="s">Odds</span></td>
                      <td><span class="s">Score</span></td>
                      <td><span class="s">Result</span></td>
                 </thead>
@@ -107,23 +119,28 @@
               </table>
                  </div>
              <p class="ident"><a href="<?=Yii::app()->request->baseUrl?>/records">See other records>></a></p>
-             <div class="framebottom"><img src="/img/blank.gif" width="1" height="13" alt="betting tips"></div>
+         </div><div class="framebottom"><img src="/img/blank.gif" width="1" height="13" alt="betting tips"></div>
          </div>
      </section>
  </div>
 
 
 
- <div class="row">
-  <div class="span12">
-      <content>
-      <?php $this->widget("application.modules.contentblock.widgets.ContentBlockWidget", array("code" => "homepage")); ?>
-      <?=$content?>
-      </content>
+    <div class="row-fluid">
+     <div class="span12">
+         <content>
+         <?php $this->widget("application.modules.contentblock.widgets.ContentBlockWidget", array("code" => "homepage")); ?>
+         <?=$content?>
+         </content>
 
-  </div>
- </div>
-<div class="row content">
+     </div>
+    </div>
+
+
+    <div class="row-fluid content">
+    <div class="fb-like" data-href="http://bettime.info" data-send="true" data-width="450" data-show-faces="false" data-font="arial"></div>
+</div>
+        <div class="row-fluid content">
         <?php $this->widget("application.modules.news.widgets.LastNewsWidget"); ?>
 </div>
 
@@ -131,7 +148,7 @@
 
 <div id="footer">
     <footer>
-      <div class="row ">
+      <div class="row-fluid">
         <span class="span12">
             <nav class="">
               <?php  $this->widget('application.modules.menu.widgets.BottomMenuWidget');?>
@@ -139,7 +156,9 @@
         </span>
       </div>
 </div>
-    <aside>Partners: <a href="http://www.livescore.in/" title="Livescore" target="_blank">Livescore</a></aside>
+<!--    <aside class="row-fluid"><div clas="span3">Partners: <a href="http://www.livescore.in/" title="Livescore" target="_blank">Livescore</a></div><div class="span3 offset4"> <iframe src="http://www.facebook.com/plugins/like.php?href=http://bettime.info"-->
+<!--            scrolling="no" frameborder="0"-->
+<!--            style="border:none; width:450px; height:80px"></iframe></div></aside>-->
 </div>
 
 <!--[if lt IE 9]>
@@ -179,6 +198,7 @@
 	});
 
 </script>
+
 
 </body>
 </html>

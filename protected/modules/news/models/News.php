@@ -89,7 +89,7 @@ class News extends CActiveRecord
             array('title, alias, keywords', 'length', 'max' => 150),
             array('alias', 'unique'),
             array('description', 'length', 'max' => 250),
-            array('short_text', 'length', 'max' => 400),
+            array('short_text', 'length', 'max' => 900),
             array('title, alias, short_text, full_text, keywords, description', 'filter', 'filter' => 'trim'),
             array('title, alias, keywords, description', 'filter', 'filter' => 'strip_tags'),
             array('alias', 'match', 'pattern' => '/^[a-zA-Z0-9_\-]+$/', 'message' => Yii::t('news', 'Запрещенные символы в поле {attribute}')),

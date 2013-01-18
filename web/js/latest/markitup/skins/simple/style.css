@@ -220,7 +220,7 @@ a {
 }
 
 .time {
-    font-family: 'Facebook Letter Font', Calibri;
+    font-family: Calibri;
     color: white;
     font-weight: bold;
 
@@ -228,6 +228,7 @@ a {
 
 .framemiddle {
     background-position: -2px;
+    height: 343px;
 
 }
 
@@ -282,5 +283,24 @@ table.medium thead td {
 
 #footer {
     background: none repeat scroll 0 0;
+
+}
+
+.time2 {
+    font-family: Calibri;
+
+}
+
+.summary {
+    float: left;
+    height: 17px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 3px;
+
+}
+
+#summary {
+    padding-top: 14px;
 
 }

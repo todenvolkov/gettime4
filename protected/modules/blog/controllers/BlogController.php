@@ -1,6 +1,7 @@
 <?php
 class BlogController extends YFrontController
 {
+    public  $layout="//layouts/newspage";
     // Выводит список блогов
     public function actionIndex()
     {
@@ -30,19 +31,25 @@ class BlogController extends YFrontController
 
         if(!$blog)
             throw new CHttpException(404, Yii::t('blog', 'Блог "{blog}" не найден!', array('{blog}' => $slug)));
-
+        $offset=($_GET['offset']);
+        if (!isset($_GET['offset']))
+        {
+            $offset=0;
+        }
         //получить первые 5 записей для блога
         $posts = Post::model()->published()->public()->findAll(array(
             'condition' => 'blog_id = :blog_id',
-            'limit' => 5,
+
+         //       'limit' => 10,
+            'offset' => $offset,
             'order' => 'publish_date DESC',
             'params' => array(':blog_id' => $blog->id),
         ));
 
         $this->render('show', array(
             'blog' => $blog,
-            'posts' => $posts,
-            'members' => $blog->members,
+            'posts' => $posts
+
         ));
     }
 

@@ -9,7 +9,7 @@
                    <td>Championship</td>
                    <td>Game</td>
                    <td>Bet</td>
-                   <td>Odd</td>
+                   <td>Odds</td>
                    <td>Score</td>
                    <td>Result</td>
               </thead>
@@ -38,17 +38,20 @@
     <td><?=Yii::app()->numberFormatter->format('#.00',$tip['ratio'])?></td>
     <td><?=$tip['finalscore']?></td>
     <?php if (mb_strtoupper($tip['victory'])==mb_strtoupper('win')) $style='btn-success';
-     else if (mb_strtoupper($tip['victory'])==mb_strtoupper('draw')) $style='btn-warning';
-     else if (mb_strtoupper($tip['victory'])==mb_strtoupper('lose')) $style='btn-danger';
-     else if (mb_strtoupper($tip['victory'])==mb_strtoupper('postp')) $style='btn-danger';
-     ?>
+       else if (mb_strtoupper($tip['victory'])==mb_strtoupper('draw')) $style='btn-warning';
+       else if (mb_strtoupper($tip['victory'])==mb_strtoupper('postp')) $style='btn';
+       else if (mb_strtoupper($tip['victory'])==mb_strtoupper('aband')) $style='btn';
+       else if (mb_strtoupper($tip['victory'])==mb_strtoupper('post')) $style='btn';
+       else if (mb_strtoupper($tip['victory'])==mb_strtoupper('lose')) $style='btn-danger';
+       else $style='btn';
+       ?>
      <td><a href="#" class="btn <?=$style?>"><?=mb_strtoupper($tip['victory'])?></a></td>
     </tr>
     <?php $lastTipMonth=Yii::app()->dateFormatter->format('MMMM yyyy',$tip['untillDate']);?>
     <?php $lastTipDay==Yii::app()->dateFormatter->format('dd',$tip['untillDate']); ?>
 <?endforeach;?>
 </table>
-    <div class="row">
+    <div class="row-fluid">
         <div class="span10 offset1">
     <a name="stats"></a><h1>Statistics</h1>
 <?php $this->widget("application.modules.contentblock.widgets.ContentBlockWidget", array("code" => Yii::app()->dateFormatter->format('MMyyyy',$tip['untillDate']))); ?>

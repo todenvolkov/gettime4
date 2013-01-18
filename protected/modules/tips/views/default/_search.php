@@ -61,6 +61,11 @@
 		<?php echo $form->label($model,'price'); ?>
 		<?php echo $form->textField($model,'price'); ?>
 	</div>
+    <div class="row">
+        <?php echo $form->checkBox($model,'tip_of_the_day'); ?>
+   		<?php echo $form->label($model,'tip_of_the_day'); ?>
+
+   	</div>
 
 	<div class="row buttons">
 		<?php echo CHtml::submitButton('Search'); ?>

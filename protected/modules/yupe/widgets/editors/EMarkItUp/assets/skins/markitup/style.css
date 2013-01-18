@@ -221,6 +221,7 @@ header {
 .time {
     color: white;
     font-weight: bold;
+    font-family: Calibri;
 
 }
 
@@ -236,5 +237,29 @@ table.medium thead td {
 
 #footer {
     background: none repeat scroll 0 0;
+
+}
+
+.time2 {
+    font-family: Calibri;
+
+}
+
+.summary {
+    float: left;
+    height: 17px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 3px;
+
+}
+
+#summary {
+    padding-top: 14px;
+
+}
+
+.framemiddle {
+    height: 343px;
 
 }

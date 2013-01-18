@@ -68,10 +68,17 @@
     	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'price'); ?>
+		<?php echo $form->labelEx($model,'price'); ?>,0 - если бесплатный прогноз
 		<?php echo $form->textField($model,'price'); ?>
 		<?php echo $form->error($model,'price'); ?>
 	</div>
+    <div class="row">
+        <?php echo $form->labelEx($model,'tip_of_the_day'); ?> 0 - нет, 1 - да
+        <?php echo $form->textField($model,'tip_of_the_day'); ?>
+
+
+   		<?php echo $form->error($model,'tip_of_the_day'); ?>
+   	</div>
 
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>

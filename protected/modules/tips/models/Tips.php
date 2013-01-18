@@ -55,14 +55,14 @@ class Tips extends CActiveRecord implements IECartPosition
 		return array(
 			array(' untillDate, untillTime, ratio, gamename,price,stavka', 'required'),
 
-			array('ratio, price', 'numerical'),
+			array('ratio, price, tip_of_the_day', 'numerical'),
 			array('guid,tip_number', 'length', 'max'=>64),
 			array('gamename', 'length', 'max'=>500),
             array('finalscore, championship', 'length', 'max'=>255),
             array('victory', 'length', 'max'=>5),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, guid, untillDate, untillTime, ratio, gamename, stavka, victory, price, finalscore, championship, tip_number', 'safe', 'on'=>'search'),
+			array('id, guid, untillDate, untillTime, ratio, gamename, stavka, victory, price, finalscore, championship, tip_number,tip_of_the_day', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -95,6 +95,7 @@ class Tips extends CActiveRecord implements IECartPosition
             'championship' => 'Чемпионат',
             'tip_number'=>'Номер прогноза',
 			'price' => 'Цена',
+            'tip_of_the_day' =>'Ставка дня',
 		);
 	}
 
@@ -102,9 +103,11 @@ class Tips extends CActiveRecord implements IECartPosition
     {
         return array(
             'forsale' => array('condition' => 'untilldate = "' . date('Y-m-d').'"','order'=>'tip_number, untilldate desc,untilltime desc'),
-            'lastArchived' => array('condition' => 'untilldate <= "' . date('Y-m-d').'" and victory<>"" and finalscore<>""','limit'=>'9','order'=>'untilldate desc,untilltime desc'),
-            'allArchived' => array('condition' => 'untilldate <= "' . date('Y-m-d').'" and victory<>"" and finalscore<>""','order'=>'untilldate,tip_number')
-
+            'lastArchived' => array('condition' => 'untilldate <= "' . date('Y-m-d').'" and victory<>"" and finalscore<>""','limit'=>'10','order'=>'untilldate desc,untilltime desc'),
+            'allArchived' => array('condition' => 'untilldate <= "' . date('Y-m-d').'" and victory<>"" and finalscore<>""','order'=>'untilldate,tip_number'),
+            'freeTipsForSale'=> array('condition' => 'untilldate = "' . date('Y-m-d').' and price=0"','order'=>'tip_number, untilldate desc,untilltime desc'),
+            'freeLastArchived' => array('condition' => 'untilldate <= "' . date('Y-m-d').'" and victory<>"" and finalscore<>"" and price=0','limit'=>'10','order'=>'untilldate desc,untilltime desc'),
+            'freeAllArchived' => array('condition' => 'untilldate <= "' . date('Y-m-d').'" and victory<>"" and finalscore<>"" and price=0','order'=>'untilldate desc,tip_number'),
         );
     }
 
@@ -131,6 +134,7 @@ class Tips extends CActiveRecord implements IECartPosition
         $criteria->compare('finalscore',$this->finalscore);
         $criteria->compare('championship',$this->championship);
         $criteria->compare('tip_number',$this->tip_number);
+        $criteria->compare('tip_of_the_day',$this->tip_of_the_day);
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
 		));

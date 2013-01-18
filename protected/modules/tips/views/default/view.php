@@ -31,5 +31,6 @@ $this->menu=array(
 		'victory',
         'finalscore',
 		'price',
+        'tip_of_the_day',
 	),
 )); ?>

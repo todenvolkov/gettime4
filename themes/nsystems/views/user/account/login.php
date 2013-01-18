@@ -1,6 +1,6 @@
 <?php $this->pageTitle = Yii::t('user', 'Authentication'); ?>
 
-<?php Yii::app()->clientScript->registerScriptFile('http://connect.facebook.net/ru_RU/all.js'); ?>
+<?php //Yii::app()->clientScript->registerScriptFile('http://connect.facebook.net/ru_RU/all.js'); ?>
 
 <h1>Authentication</h1>
 
@@ -15,26 +15,26 @@
 
     <?php echo $form->errorSummary($model); ?>
 
-    <div class="row">
+    <div class="row-fluid">
         <?php echo $form->labelEx($model, 'email'); ?>
         <?php echo $form->textField($model, 'email'); ?>
         <?php echo $form->error($model, 'email'); ?>
     </div>
 
-    <div class="row">
+    <div class="row-fluid">
         <?php echo $form->labelEx($model, 'password'); ?>
         <?php echo $form->passwordField($model, 'password'); ?>
         <?php echo $form->error($model, 'password'); ?>
     </div>
 
-    <div class="row">
+    <div class="row-fluid">
         <p class="hint">
             <?php echo CHtml::link(Yii::t('user', "Registration"), array('/user/account/registration')); ?>
             | <?php echo CHtml::link(Yii::t('user', "Password recovery"), array('/user/account/recovery')) ?>
         </p>
     </div>
 
-    <div class="row submit">
+    <div class="row-fluid submit">
         <?php echo CHtml::submitButton('Sign in'); ?>
     </div>
 

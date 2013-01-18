@@ -1,6 +1,6 @@
-<?php $this->pageTitle='Блоги';?>
+<?php $this->pageTitle='Blogs';?>
 
-<h1>Блоги</h1>
+<h1>Blogs</h1>
 
     <script type="text/javascript">
         $(document).ready(function(){

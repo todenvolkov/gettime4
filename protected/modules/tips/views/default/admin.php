@@ -54,6 +54,7 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 		'victory',
         'finalscore',
 		'price',
+        'tip_of_the_day',
 
 		array(
 			'class'=>'CButtonColumn',

@@ -15,6 +15,10 @@ public function actionIndex()
     }
     else
     {
+        $criteria=new CDbCriteria;
+        $criteria->order='untillDate desc';  // only select the ’title’ column
+        $tips=Tips::model()->allArchived()->findAll($criteria);
+
 	    $this->render('tips',array('tips'=>$tips));
     }
 }

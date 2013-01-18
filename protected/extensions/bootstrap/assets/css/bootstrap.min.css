@@ -668,7 +668,7 @@ pre code {
 }
 
 form {
-    margin: 0 0 18px
+    margin: 0 0 4px
 }
 
 fieldset {
@@ -3401,7 +3401,7 @@ button.btn.btn-mini, input[type="submit"].btn.btn-mini {
 
 .navbar .nav>li>a {
     float: none;
-    padding: 9px 10px 11px;
+    padding: 9px 6px 11px;
     line-height: 19px;
     color: #999;
     text-decoration: none;

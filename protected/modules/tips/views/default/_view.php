@@ -49,6 +49,10 @@
 	<?php echo CHtml::encode($data->price); ?>
 	<br />
 
+    <b><?php echo CHtml::encode($data->getAttributeLabel('tip_of_the_day')); ?>:</b>
+   	<?php echo CHtml::encode($data->tip_of_the_day); ?>
+   	<br />
+
 
 
 </div>

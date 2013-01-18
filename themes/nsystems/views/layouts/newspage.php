@@ -9,34 +9,50 @@
 <meta name="language" content="<?=Yii::app()->language?>" />
 <meta name="keywords" content="<?=$this->keywords?>" />
 <meta name="description" content="<?=$this->description?>" />
-    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-<title><?=$this->keywords?></title>
+    <meta name="Distribution" content="GLOBAL" />
+    <meta name="revisit-after" content="1 day" />
+    <META HTTP-EQUIV="expires" content="0">
+    <META HTTP-EQUIV="pragma" CONTENT="no-cache">
+    <META NAME="Classification" CONTENT="Sports Gambling">
+    <META NAME="ROBOTS" CONTENT="ALL">
+
+    <link href="http://bettime.info/favicon.ico" rel="icon" type="image/x-icon" />
+    <link href="http://bettime.info/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 <!-- CSS: screen, mobile & print are all in the same file -->
 
 <link rel="stylesheet" href="<?=Yii::app()->request->baseUrl?>/themes/nsystems/css/style.css" media="all" />
-    <title><?php echo CHtml::encode(Yii::app()->name);?> <?php echo CHtml::encode($this->pageTitle); ?></title>
-<!--[if lt IE 9]>
-<script src="<?=Yii::app()->request->baseUrl?>/themes/nsystems/js/html5.js" type="text/javascript"></script>
-<![endif]-->
-    <script src="<?=Yii::app()->request->baseUrl?>/themes/nsystems/js/jquery-1.8.0.min.js" type="text/javascript"></script>
+    <title> <?php echo CHtml::encode($this->pageTitle); ?></title>
 
 </head>
 <body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 <div class="container" id="main">
 <div class="row">
   <div class="span-12">
-      <div class="row"><span class="span12"><img src="/img/blank.gif" height="30" width="30"> </span> </div>
+      <div class="row"><span class="span12"><img src="/img/blank.gif" height="30" width="30" alt="bet"> </span> </div>
       <div class="row">
-        <div class="span1"><a href="/"><img src="/img/ball.png" width="60" height="60" class="ball"></a></div>
-        <div class="span3"><h1 class="logo"><a href="/"><span class="bet logo">BET</span><span class="time logo">TIME</span></a></h1></div>
-        <div class="span3 offset5"><p class="ident"><a href="/login">Sign in</a> / <a href="/user/account/registration">Registration</a></p></div>
+        <div class="span1"><a href="/"><img src="/img/ball.png" width="60" height="60" class="ball" alt="ball"></a></div>
+        <div class="span3"><span class="logo"><a href="/"><span class="bet logo">BET</span><span class="time logo">TIME</span></a></span></div>
+        <div class="span3 offset5"><p class="ident">
+            <?php if (!Yii::app()->user->isAuthenticated()) { ?>
+              <a href="<?=Yii::app()->request->baseUrl?>/login">Sign in</a> / <a href="<?=Yii::app()->request->baseUrl?>/user/account/registration">Registration</a> <?php } else { ?>
+               Hello <a href="<?=Yii::app()->request->baseUrl?>/user/people/<?=Yii::app()->user->getName()?>"><?=Yii::app()->user->getName()?></a> <a href="<?=Yii::app()->request->baseUrl?>/logout">Log out</a> <?php } ?>
+            </p></div>
 
       </div>
       <div class="row">
           <div class="span3 offset1"><h2 class="slogan">it's time to make a bet</h2></div>
       </div>
       <div class="row">
-          <div class="span2 offset10"><img src="/img/blank.gif" width="111" height="103"></div>
+          <div class="span2 offset10"><img src="/img/blank.gif" width="111" height="103" alt="betting"></div>
       </div>
       <div class="row">
     <nav style="padding-left:20px">
@@ -46,13 +62,13 @@
   </div>
     </div>
 
- <div class="row">
+ <div class="row-fluid">
      <section class="tips">
 
-         <div class="span6 framemiddle">
-             <div class="frametop"><img src="/img/blank.gif" width="1" height="13"></div>
+         <div class="span6 framemiddle_newspage">
+             <div class="frametop2"><img src="/img/blank.gif" width="1" height="13"></div>
 
-             <h1 class="date"><span class="todays"><a href="/">Today's</a></span><a href="/"> betting tips <?=date('d.m.Y',time())?>  >>></a>  </h1>
+             <h1 class="date"><span class="todays"><a href="http://bettime.info/">Live betting tips <?=date('d.m.Y',time())?></a></span>  </h1>
 
 
 
@@ -60,9 +76,9 @@
              </div>
 
 
-         <div class="span6 framemiddle">
-             <div class="frametop"><img src="/img/blank.gif" width="1" height="13"></div>
-             <h1 class="date"><span class="todays"><a href="/records">Last</a></span> <a href="/records">results >>></a> </h1>
+         <div class="span6 framemiddle_newspage">
+             <div class="frametop2"><img src="/img/blank.gif" width="1" height="13"></div>
+             <h1 class="date"><span class="todays"><a href="/records">Betting tips archive</a></span> </h1>
 
 
              <div class="framebottom"><img src="/img/blank.gif" width="1" height="13"></div>
@@ -72,7 +88,7 @@
 
 
 
- <div class="row blackbg">
+ <div class="row-fluid blackbg">
   <div class="span11 offset1">
         <content>
               <?=$content?>
@@ -80,10 +96,15 @@
 
   </div>
  </div>
+
+
+    <div class="row-fluid content">
+      <div class="fb-like" data-href="http://bettime.info" data-send="true" data-width="450" data-show-faces="false" data-font="arial"></div>
+  </div>
     </div>
 <div id="footer">
     <footer>
-    <div class="row ">
+    <div class="row-fluid">
       <span class="span12">
           <nav class="dottedrow">
             <?php  $this->widget('application.modules.menu.widgets.BottomMenuWidget');?>
@@ -123,6 +144,7 @@
 	});
 
 </script>
+
 
 
 </body>
