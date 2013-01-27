@@ -14,6 +14,9 @@ class AccountController extends YFrontController
             'registration' => array(
                 'class' => 'application.modules.user.controllers.account.RegistrationAction'
             ),
+            'facebookregistration' => array(
+                           'class' => 'application.modules.user.controllers.account.FacebookRegistrationAction'
+                       ),
             'activate' => array(
                 'class' => 'application.modules.user.controllers.account.ActivateAction'
             ),
@@ -31,7 +34,8 @@ class AccountController extends YFrontController
             ),
             'recoveryPassword' => array(
                 'class' => 'application.modules.user.controllers.account.RecoveryPasswordAction'
-            ),            
+            ),
+
         );
     }
 }

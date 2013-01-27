@@ -192,17 +192,18 @@ background-color: #000;
 }
 .ball
 {
-  width: 100px;
+
     position: relative;
-    top: -6px;
+    top: 2px;
     left: 16px;
 }
 .bet
 {
+    color: #F453E8;
     font-family: Calibri;
-     color: #f453E8;
-    font-weight: bold;
     font-size: 50px;
+    font-weight: bold;
+    margin-left: -73px;
 }
 .time
 {
@@ -251,15 +252,19 @@ h3 .time
     color: #FFFFFF;
       font-family: Comic Sans MS;
       font-size: 16px;
-      left: 1px;
+      left: 85px;
       position: relative;
-      top: -37px;
+      top: -28px;
 
 }
 
 h1.logo
 {
     font-size: 48px;
+}
+.logo
+{
+    padding-top: 10px;;
 }
 
 .todays
@@ -444,6 +449,8 @@ table.small, table.small td
 {
     margin-left:25px;
     color: #fff;
+    line-height: 20px;
+
 }
 table.medium, table.medium td
 {
@@ -515,4 +522,87 @@ table.medium thead td
     float: left;
     margin-left: 20px;
     margin-right: 20px;
+}
+.greenbg
+{
+    background:#6D2E9D;
+}
+.labelinline
+{
+   display:block;
+   margin:13px 3px 2px 5px;
+   text-align:right;
+}
+
+.inputinline
+{
+   display:block;
+   margin:7px 3px 2px 5px;
+
+}
+.loginbutton
+{
+    margin-left:6px;
+      margin-top:6px;
+}
+.lightborders
+{
+    border: 1px solid #fff;
+    border-bottom: none;
+    text-align: center;
+
+}
+.lightborders:last-child
+{
+    border: 1px solid #fff;
+}
+
+.borderbottom
+{
+    border-bottom-color:#DDDDDD;
+    border-bottom-style:solid;
+    border-collapse:separate;
+    border-width:1px 1px 1px 0;
+}
+
+.grey
+{
+    background-color: #d9d9d9;
+}
+.green{
+    background-color: #3a5d11;
+}
+.green2
+{
+    background-color: #a5c77d;
+}
+.grey2
+{
+    background-color: #fff;
+}
+.black
+{
+    background-color: #000000;
+    line-height: 30px;
+}
+.blackfont
+{
+    color: #000;
+    line-height: 30px;
+}
+table .table
+{
+    line-height: 20px;
+}
+.noborder
+{
+    border: none;
+}
+.bigheight
+{
+    height: 52px;
+}
+.priceimage
+{
+    vertical-align: middle;
 }

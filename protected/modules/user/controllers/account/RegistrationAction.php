@@ -1,9 +1,43 @@
 <?php
+
 class RegistrationAction extends CAction
 {
-    public $layout='//layouts/newspage';
+    public $layout='//layouts/login_page_template';
+    private $_identity;
+
+
+     function parse_signed_request($signed_request, $secret) {
+      list($encoded_sig, $payload) = explode('.', $signed_request, 2);
+
+      // decode the data
+      $sig = $this->base64_url_decode($encoded_sig);
+      $data = json_decode($this->base64_url_decode($payload), true);
+
+      if (strtoupper($data['algorithm']) !== 'HMAC-SHA256') {
+        error_log('Unknown algorithm. Expected HMAC-SHA256');
+        return null;
+      }
+
+      // check sig
+      $expected_sig = hash_hmac('sha256', $payload, $secret, $raw = true);
+      if ($sig !== $expected_sig) {
+        error_log('Bad Signed JSON signature!');
+        return null;
+      }
+
+      return $data;
+    }
+
+
+    function base64_url_decode($input) {
+        return base64_decode(strtr($input, '-_', '+/'));
+    }
+
+
     public function run()
     {
+        define("FACEBOOK_APP_ID","441551729247176");
+        define("FACEBOOK_SECRET", "88fe423a10b2f51dd6b840f4a2706489");
         $this->controller->layout=$this->layout;
         $form = new RegistrationForm;
 
@@ -95,7 +129,14 @@ class RegistrationAction extends CAction
 
                         Yii::app()->user->setFlash(YFlashMessages::NOTICE_MESSAGE, Yii::t('user', 'Account created, please Sign in now!'));
 
-                        $this->controller->redirect(array($module->registrationSucess));
+                        $this->_identity = new UserIdentity($form->email, $form->password);
+//  LOGIN NOW! WHY WAIT AGAIN FOR INPUT?
+                                   if (!$this->_identity->authenticate())
+                                       $this->addError('password', Yii::t('user', 'Email or password is incorrect!'));
+                                   else
+                                       Yii::app()->user->login($this->_identity);
+
+                        $this->controller->redirect(array($module->loginSuccess));
                     }
                     else
                     {
@@ -106,6 +147,7 @@ class RegistrationAction extends CAction
                 }
             }
         }
+
 
         $this->controller->render('registration', array('model' => $form, 'module' => $module));
     }

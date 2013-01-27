@@ -5,7 +5,7 @@ class UserModule extends YWebModule
 
     public $accountActivationFailure = '/user/account/registration';
 
-    public $loginSuccess;
+    public $loginSuccess='/';
 
     public $registrationSucess = '/user/account/login';
 
@@ -19,9 +19,9 @@ class UserModule extends YWebModule
 
     public $minPasswordLength = 3;
 
-    public $emailAccountVerification = true;
+    public $emailAccountVerification = false;
 
-    public $showCaptcha = true;
+    public $showCaptcha = false;
 
     public $minCaptchaLength = 3;
 

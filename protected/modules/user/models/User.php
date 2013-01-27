@@ -118,7 +118,15 @@ class User extends CActiveRecord
             ? $data[$this->email_confirm]
             : Yii::t('user', '*unknown*');
     }
+    public function getEmailExistsStatus($email) // А есть ли такой email ? True - есть
+    {
+         if (User::model()->find('email=:email',array(':email'=>$email))==null)
+             return false;
+         else
+             return true;
 
+
+     }
     /**
      * Returns the static model of the specified AR class.
      * @return User the static model class
@@ -340,7 +348,7 @@ class User extends CActiveRecord
             : $this->nick_name;
     }
 
-    public function createAccount($nick_name, $email, $password = null, $salt = null, $status = self::STATUS_NOT_ACTIVE, $emailConfirm = self::EMAIL_CONFIRM_NO, $first_name = '', $last_name = '')
+    public function createAccount($nick_name, $email, $password = null, $salt = null, $status = self::STATUS_NOT_ACTIVE, $emailConfirm = self::EMAIL_CONFIRM_NO, $first_name = '', $last_name = '',$birth_date='',$gender='',$location='')
     {
         $salt = is_null($salt) ? $this->generateSalt() : $salt;
 
@@ -356,7 +364,10 @@ class User extends CActiveRecord
             'registration_ip' => Yii::app()->request->userHostAddress,
             'activation_ip' => Yii::app()->request->userHostAddress,
             'status' => $status,
-            'email_confirm' => $emailConfirm
+            'email_confirm' => $emailConfirm,
+            'birth_date' =>$birth_date,
+            'gender'=>$gender,
+            'location'=>$location
         ));
         // если не определен емэйл то генерим уникальный
         $setemail = empty($email);
